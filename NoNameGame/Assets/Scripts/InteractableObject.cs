@@ -17,6 +17,7 @@ public class InteractableObject : MonoBehaviour
     private PlayerMovement playerMove;
     private MouseLook mouseControl;
     public GameObject InteractableBox;
+    public Scrollbar objectScrollbar;
     //public DialogueManager cancelmovement;
 
     // Start is called before the first frame update
@@ -74,6 +75,7 @@ public class InteractableObject : MonoBehaviour
         isInteracting = false;
         isInteractedWith = true;
         objectText.text = "";
+        objectScrollbar.value = 1;
         InteractableBox.SetActive(false);
         EnablePlayerControl();
     }
