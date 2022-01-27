@@ -1,10 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class DialogueTrigger : MonoBehaviour
 {
     public TextAsset DialogueTextFile;
+
+    [Space(20)]
+    public GameObject InteractTextBox;
+    public Text interactText;
 
     private Queue<string> dialogue = new Queue<string>();
 
@@ -13,7 +18,12 @@ public class DialogueTrigger : MonoBehaviour
 
     private bool dialogueTriggered = false;
 
-    void TriggerDialogue()
+    private void Start()
+    {
+        InteractTextBox.SetActive(false);
+    }
+
+    private void TriggerDialogue()
     {
         ReadTextFile();
         FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
@@ -45,12 +55,23 @@ public class DialogueTrigger : MonoBehaviour
         dialogue.Enqueue("EndQueue");
     }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "Player" && dialogueTriggered == false)
+        {
+            InteractTextBox.SetActive(true);
+            interactText.text = "'E' to Talk";
+        }
+    }
+
     private void OnTriggerStay(Collider other)
     {
         if (other.gameObject.tag == "Player" && dialogueTriggered == false && Input.GetKey(KeyCode.E))
         {
             TriggerDialogue();
             dialogueTriggered = true;
+            InteractTextBox.SetActive(false);
+            interactText.text = "";
             Debug.Log("Collision");
         }
 
@@ -66,8 +87,9 @@ public class DialogueTrigger : MonoBehaviour
     {
         if (other.gameObject.tag == "Player" && dialogueTriggered == true)
         {
-            FindObjectOfType<DialogueManager>().EndDialogue();
-            dialogueTriggered = false;
+            FindObjectOfType<DialogueManager>().EndDialogue();            
         }
+        InteractTextBox.SetActive(false);
+        interactText.text = "";
     }
 }

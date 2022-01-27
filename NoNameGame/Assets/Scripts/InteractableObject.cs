@@ -6,17 +6,24 @@ using UnityEngine.UI;
 
 public class InteractableObject : MonoBehaviour
 {
+    public TextAsset textFile;
+    public Text objectText;
+    public GameObject InteractableBox;
+    public Scrollbar objectScrollbar;
+
+    [Space(20)]
+    public GameObject InteractTextBox;
+    public Text interactText;
+
     private bool isInteracting = false;
     private bool isInteractedWith = false;
 
     public int objectRequirement;
-    
-    // Jacob says hi
-    public TextAsset textFile;
-    public Text objectText;
+
     private PlayerMovement playerMove;
     private MouseLook mouseControl;
-    public GameObject InteractableBox;
+    // Jacob says hi
+    
     //public DialogueManager cancelmovement;
 
     // Start is called before the first frame update
@@ -74,8 +81,18 @@ public class InteractableObject : MonoBehaviour
         isInteracting = false;
         isInteractedWith = true;
         objectText.text = "";
+        objectScrollbar.value = 1;
         InteractableBox.SetActive(false);
         EnablePlayerControl();
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "Player")
+        {
+            InteractTextBox.SetActive(true);
+            interactText.text = "'E' to Interact";
+        }
     }
 
     private void OnTriggerStay(Collider other)
@@ -84,12 +101,19 @@ public class InteractableObject : MonoBehaviour
         {
             isInteracting = true;
             DisplayObjectInfo();
+            InteractTextBox.SetActive(false);
+            interactText.text = "";
             Debug.Log("Interacted");
-            
         }
         if(other.tag == "Player" && Input.GetKey(KeyCode.Space) && isInteracting)
         {
             EndInteraction();
         }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        InteractTextBox.SetActive(false);
+        interactText.text = "";
     }
 }
