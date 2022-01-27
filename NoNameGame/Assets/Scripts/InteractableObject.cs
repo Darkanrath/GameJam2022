@@ -15,10 +15,14 @@ public class InteractableObject : MonoBehaviour
     public GameObject InteractTextBox;
     public Text interactText;
 
+    [Space(20)]
+    public int objectRequirement;
+
+    [Space(10)]
+    public bool colorAnObject = false;
+
     private bool isInteracting = false;
     private bool isInteractedWith = false;
-
-    public int objectRequirement;
 
     private PlayerMovement playerMove;
     private MouseLook mouseControl;
@@ -37,6 +41,10 @@ public class InteractableObject : MonoBehaviour
         if (!isInteractedWith)
         {
             ChangeStatus();
+            if (colorAnObject)
+            {
+                FindObjectOfType<DialogueManager>().ChangeAnObject();
+            }
             isInteractedWith = true;
         }
         // Code for displaying object info goes here.
