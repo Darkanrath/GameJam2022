@@ -26,6 +26,8 @@ public class DialogueManager : MonoBehaviour
 
     private string[] dialogueText;
 
+    private List<GameObject> colorableObjects = new List<GameObject>();
+
     private Queue<string> inputStream = new Queue<string>();
 
     private PlayerMovement playerMove;
@@ -36,6 +38,8 @@ public class DialogueManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        colorableObjects.AddRange(GameObject.FindGameObjectsWithTag("ColorChange"));
+
         DialogueBox.SetActive(false);
         ChoicesBox.SetActive(false);
         for (int x = 0; x < 4; x++)
@@ -255,5 +259,15 @@ public class DialogueManager : MonoBehaviour
         {
             mouseControl.enabled = true;
         }
+    }
+
+    public void ChangeAnObject()
+    {
+        int randomPick = Random.Range(0, colorableObjects.Count - 1);
+
+        colorableObjects[randomPick].GetComponent<ColorObject>().ChangeColor();
+
+        colorableObjects.RemoveAt(randomPick);
+        Debug.Log(colorableObjects[randomPick]);
     }
 }
