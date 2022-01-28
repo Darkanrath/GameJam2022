@@ -7,13 +7,6 @@ using UnityEngine.UI;
 public class InteractableObject : MonoBehaviour
 {
     public TextAsset textFile;
-    public Text objectText;
-    public GameObject InteractableBox;
-    public Scrollbar objectScrollbar;
-
-    [Space(20)]
-    public GameObject InteractTextBox;
-    public Text interactText;
 
     [Space(20)]
     public int objectRequirement;
@@ -24,19 +17,15 @@ public class InteractableObject : MonoBehaviour
     private bool isInteracting = false;
     private bool isInteractedWith = false;
 
-    private PlayerMovement playerMove;
-    private MouseLook mouseControl;
+    private InteractManager intManagerRef;
     // Jacob says hi
-    
-    //public DialogueManager cancelmovement;
 
-    // Start is called before the first frame update
-    private void Start()
+    private void Awake()
     {
-        InteractableBox.SetActive(false);
+        intManagerRef = FindObjectOfType<InteractManager>();
     }
 
-    private void DisplayObjectInfo()
+    private void DisplayInfo()
     {
         if (!isInteractedWith)
         {
@@ -53,53 +42,20 @@ public class InteractableObject : MonoBehaviour
         // Refer to DialogueManager.cs & DialogueTrigger.cs and my example dialogue files for help in reading text.
         // Ask me if you have questions.
 
-        InteractableBox.SetActive(true);
         string text = textFile.text;
-        objectText.text = text;
-        //cancelmovement.DisableCameraControl();
-        DisablePlayerControl();
-        
+        intManagerRef.DisplayObjectInfo(text);
     }
 
-    private void DisablePlayerControl()
-    {
-        playerMove = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>();
-        playerMove.Idle();
-        playerMove.enabled = false;
-        mouseControl = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<MouseLook>();
-        mouseControl.enabled = false;
-        Cursor.lockState = CursorLockMode.Confined;
-        Cursor.visible = true;
-    }
-
-    private void EnablePlayerControl()
-    {
-        playerMove.enabled = true;
-        mouseControl.enabled = true;
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
-    }
     private void ChangeStatus()
     {
         FindObjectOfType<DialogueManager>().AddRequiredObjects(objectRequirement);
-    }
-
-    private void EndInteraction()
-    {
-        isInteracting = false;
-        isInteractedWith = true;
-        objectText.text = "";
-        objectScrollbar.value = 1;
-        InteractableBox.SetActive(false);
-        EnablePlayerControl();
     }
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Player")
         {
-            InteractTextBox.SetActive(true);
-            interactText.text = "'E' to Interact";
+            intManagerRef.ShowInteractText("'E' to Interact");
         }
     }
 
@@ -108,20 +64,19 @@ public class InteractableObject : MonoBehaviour
         if (other.tag == "Player" && Input.GetKey(KeyCode.E) && !isInteracting)
         {
             isInteracting = true;
-            DisplayObjectInfo();
-            InteractTextBox.SetActive(false);
-            interactText.text = "";
+            DisplayInfo();
             Debug.Log("Interacted");
         }
         if(other.tag == "Player" && Input.GetKey(KeyCode.Space) && isInteracting)
         {
-            EndInteraction();
+            isInteracting = false;
+            isInteractedWith = true;
+            intManagerRef.EndInteraction();
         }
     }
 
     private void OnTriggerExit(Collider other)
     {
-        InteractTextBox.SetActive(false);
-        interactText.text = "";
+        intManagerRef.HideInteractText();
     }
 }

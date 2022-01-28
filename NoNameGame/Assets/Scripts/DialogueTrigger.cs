@@ -5,11 +5,10 @@ using UnityEngine.UI;
 
 public class DialogueTrigger : MonoBehaviour
 {
-    public TextAsset DialogueTextFile;
+    public TextAsset dialogueTextFile;
 
-    [Space(20)]
-    public GameObject InteractTextBox;
-    public Text interactText;
+    private GameObject interactTextBox;
+    private Text interactText;
 
     private Queue<string> dialogue = new Queue<string>();
 
@@ -18,9 +17,11 @@ public class DialogueTrigger : MonoBehaviour
 
     private bool dialogueTriggered = false;
 
-    private void Start()
+    private InteractManager intManagerRef;
+
+    private void Awake()
     {
-        InteractTextBox.SetActive(false);
+        intManagerRef = FindObjectOfType<InteractManager>();
     }
 
     private void TriggerDialogue()
@@ -31,7 +32,7 @@ public class DialogueTrigger : MonoBehaviour
 
     private void ReadTextFile()
     {
-        string txt = DialogueTextFile.text;
+        string txt = dialogueTextFile.text;
 
         string[] lines = txt.Split(System.Environment.NewLine.ToCharArray());
 
@@ -59,8 +60,7 @@ public class DialogueTrigger : MonoBehaviour
     {
         if (other.gameObject.tag == "Player" && dialogueTriggered == false)
         {
-            InteractTextBox.SetActive(true);
-            interactText.text = "'E' to Talk";
+            intManagerRef.ShowInteractText("'E' to Talk");
         }
     }
 
@@ -70,8 +70,7 @@ public class DialogueTrigger : MonoBehaviour
         {
             TriggerDialogue();
             dialogueTriggered = true;
-            InteractTextBox.SetActive(false);
-            interactText.text = "";
+            intManagerRef.HideInteractText();
             Debug.Log("Collision");
         }
 
@@ -89,7 +88,6 @@ public class DialogueTrigger : MonoBehaviour
         {
             FindObjectOfType<DialogueManager>().EndDialogue();            
         }
-        InteractTextBox.SetActive(false);
-        interactText.text = "";
+        intManagerRef.HideInteractText();
     }
 }
