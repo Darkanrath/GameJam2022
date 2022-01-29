@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-
 public class InteractableObject : MonoBehaviour
 {
     public TextAsset textFile;
+
+    [Space(10)]
+    public string interactionText;
 
     [Space(20)]
     public int objectRequirement;
@@ -36,11 +38,6 @@ public class InteractableObject : MonoBehaviour
             }
             isInteractedWith = true;
         }
-        // Code for displaying object info goes here.
-        // Will require new UI with a text box.
-        // Will preferabbly use a text file for reading the displayed info.
-        // Refer to DialogueManager.cs & DialogueTrigger.cs and my example dialogue files for help in reading text.
-        // Ask me if you have questions.
 
         string text = textFile.text;
         intManagerRef.DisplayObjectInfo(text);
@@ -55,7 +52,7 @@ public class InteractableObject : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            intManagerRef.ShowInteractText("'E' to Interact");
+            intManagerRef.ShowInteractText(interactionText);
         }
     }
 

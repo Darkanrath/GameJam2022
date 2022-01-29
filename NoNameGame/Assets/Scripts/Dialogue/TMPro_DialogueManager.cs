@@ -2,19 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
-public class DialogueManager : MonoBehaviour
+public class TMPro_DialogueManager : MonoBehaviour
 {
     public GameObject DialogueBox;
 
-    public Text BodyText;
-    public Text NameText;
+    public TMP_Text BodyText;
+    public TMP_Text NameText;
 
     [Space(20)]
     public GameObject ChoicesBox;
 
     public GameObject[] ChoiceButtons;
-    public Text[] ChoiceTexts;
+    public TMP_Text[] ChoiceTexts;
 
     [Space(20)]
     public bool freezePlayerOnDialogue = true;
@@ -23,6 +24,7 @@ public class DialogueManager : MonoBehaviour
     private string choiceNumber;
 
     private bool isChoosing = false;
+    private bool isDialogue = false;
 
     private string[] dialogueText;
 
@@ -36,7 +38,7 @@ public class DialogueManager : MonoBehaviour
     private List<string> requiredObjects = new List<string>();
 
     // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
         DialogueBox.SetActive(false);
         ChoicesBox.SetActive(false);
@@ -68,10 +70,8 @@ public class DialogueManager : MonoBehaviour
     {
         mouseControl = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<MouseLook>();
         mouseControl.enabled = false;
-        Cursor.lockState = CursorLockMode.Confined;
-        Cursor.visible = true;
     }
-    
+
     private void EnableCameraControl()
     {
         mouseControl.enabled = true;
@@ -84,7 +84,10 @@ public class DialogueManager : MonoBehaviour
         if (freezePlayerOnDialogue)
         {
             DisablePlayerMovement();
+            DisableCameraControl();
         }
+
+        isDialogue = true;
 
         DialogueBox.SetActive(true);
         inputStream = dialogue;
@@ -93,7 +96,7 @@ public class DialogueManager : MonoBehaviour
 
     public void AdvanceDialogue()
     {
-        if (!isChoosing)
+        if (!isChoosing && isDialogue)
         {
             PrintDialogue();
         }
@@ -144,7 +147,8 @@ public class DialogueManager : MonoBehaviour
 
     private void PrintChoices()
     {
-        DisableCameraControl();
+        Cursor.lockState = CursorLockMode.Confined;
+        Cursor.visible = true;
         ChoicesBox.SetActive(true);
         isChoosing = true;
         for (int x = 0; x < 4; x++)
@@ -231,11 +235,14 @@ public class DialogueManager : MonoBehaviour
 
     public void MadeChoice(int choice)
     {
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+        FindObjectOfType<ResultsCarrier>().RetrieveResults(choice);
         choiceMade = choice.ToString();
         ChoicesBox.SetActive(false);
         PrintDialogue();
-        EnableCameraControl();
         isChoosing = false;
+        requiredObjects.Clear();
     }
 
     public void AddRequiredObjects(int tempObject)
@@ -245,23 +252,32 @@ public class DialogueManager : MonoBehaviour
 
     public void EndDialogue()
     {
-        BodyText.text = "";
-        NameText.text = "";
-        inputStream.Clear();
-        DialogueBox.SetActive(false);
-        for (int x = 0; x < 4; x++)
+        if (isDialogue)
         {
-            ChoiceButtons[x].SetActive(false);
-        }
+            Debug.Log("Ending Dialogue");
+            if (FindObjectOfType<IntroductionDialogue>())
+            {
+                Destroy(FindObjectOfType<IntroductionDialogue>().gameObject);
+            }
+            BodyText.text = "";
+            NameText.text = "";
+            inputStream.Clear();
+            DialogueBox.SetActive(false);
+            for (int x = 0; x < 4; x++)
+            {
+                ChoiceButtons[x].SetActive(false);
+            }
 
-        if (freezePlayerOnDialogue)
-        {
-            EnablePlayerMovement();
-        }
+            if (freezePlayerOnDialogue)
+            {
+                EnablePlayerMovement();
+            }
 
-        if (mouseControl.enabled == false)
-        {
-            mouseControl.enabled = true;
+            if (mouseControl.enabled == false)
+            {
+                mouseControl.enabled = true;
+            }
+            isDialogue = false;
         }
     }
 
@@ -269,9 +285,12 @@ public class DialogueManager : MonoBehaviour
     {
         int randomPick = Random.Range(0, colorableObjects.Count - 1);
 
-        colorableObjects[randomPick].GetComponent<ColorObject>().ChangeColor();
+        if (colorableObjects[randomPick] != null)
+        {
+            colorableObjects[randomPick].GetComponent<ColorObject>().ChangeColor();
 
-        colorableObjects.RemoveAt(randomPick);
-        Debug.Log(colorableObjects[randomPick]);
+            colorableObjects.RemoveAt(randomPick);
+            Debug.Log(colorableObjects[randomPick]);
+        }
     }
 }

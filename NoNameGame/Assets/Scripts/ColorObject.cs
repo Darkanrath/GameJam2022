@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class ColorObject : MonoBehaviour
@@ -15,12 +13,18 @@ public class ColorObject : MonoBehaviour
     {
         objectMatRenderer = gameObject.GetComponent<Renderer>();
         objectMatRenderer.material.SetTexture("_MainTex", darkTexture);
-        objectMatRenderer.material.SetTexture("_BumpMap", normalMap);
+        if (normalMap)
+        {
+            objectMatRenderer.material.SetTexture("_BumpMap", normalMap);
+        }
     }
 
     public void ChangeColor()
     {
         objectMatRenderer.material.SetTexture("_MainTex", coloredTexture);
-        objectMatRenderer.material.SetTexture("_BumpMap", normalMap);
+        if (normalMap)
+        {
+            objectMatRenderer.material.SetTexture("_BumpMap", normalMap);
+        }
     }
 }
