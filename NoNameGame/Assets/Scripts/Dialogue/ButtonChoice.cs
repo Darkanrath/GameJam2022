@@ -13,6 +13,6 @@ public class ButtonChoice : MonoBehaviour
 
     public void PressedChoice()
     {
-        FindObjectOfType<DialogueManager>().MadeChoice(thisChoice);
+        FindObjectOfType<TMPro_DialogueManager>().MadeChoice(thisChoice);
     }
 }

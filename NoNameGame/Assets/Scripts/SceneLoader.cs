@@ -14,6 +14,7 @@ public class SceneLoader : MonoBehaviour
     private int currentSceneIndex = 0;
     private int nextSceneIndex;
 
+    private int officeIndex = 1;
     private bool officeLoadedOnce = false;
 
     private void Start()
@@ -46,7 +47,7 @@ public class SceneLoader : MonoBehaviour
     {
         DisablePlayer();
 
-        if (index == 1 && officeLoadedOnce)
+        if (index == officeIndex && officeLoadedOnce)
         {
             Debug.Log("Going back to Office");
             SceneManager.SetActiveScene(SceneManager.GetSceneByBuildIndex(index));
@@ -57,7 +58,7 @@ public class SceneLoader : MonoBehaviour
         }
         else
         {
-            if (index == 1 && !officeLoadedOnce)
+            if (index == officeIndex && !officeLoadedOnce)
             {
                 Debug.Log("Entering Office for first time");
                 StartCoroutine(LoadSceneAsync(index));
@@ -83,7 +84,7 @@ public class SceneLoader : MonoBehaviour
         {
             SceneManager.UnloadSceneAsync(SceneManager.GetSceneByBuildIndex(currentSceneIndex));
             //Debug.Log("Loaded Office Scene");
-            if (index == 1)
+            if (index == officeIndex)
             {
                 player = GameObject.FindGameObjectWithTag("Player");
                 FindObjectOfType<DialogueManager>().AddColorableObjects();
