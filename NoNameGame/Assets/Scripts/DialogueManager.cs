@@ -38,8 +38,6 @@ public class DialogueManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        colorableObjects.AddRange(GameObject.FindGameObjectsWithTag("ColorChange"));
-
         DialogueBox.SetActive(false);
         ChoicesBox.SetActive(false);
         for (int x = 0; x < 4; x++)
@@ -48,11 +46,17 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
+    public void AddColorableObjects()
+    {
+        colorableObjects.AddRange(GameObject.FindGameObjectsWithTag("ColorChange"));
+        //Debug.Log(colorableObjects[0]);
+    }
+
     private void DisablePlayerMovement()
     {
         playerMove = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>();
-        playerMove.Idle();
         playerMove.enabled = false;
+        playerMove.Idle();
     }
 
     private void EnablePlayerMovement()
