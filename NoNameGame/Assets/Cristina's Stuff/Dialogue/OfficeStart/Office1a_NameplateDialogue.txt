@@ -1,0 +1,11 @@
+[NAME=Nameplate]Reads "CEO".
+
+[NAME=CEO]I have not been CEO for long, but I am glad my dad had some connections that landed me this position. 
+
+Honestly, I think I am overqualified for it. I don’t need the extra money, but if I make money for this company, I am sure eventually I will become the next president.
+
+Come on, I have the knowledge, the charisma, I will get it. 
+
+And the current president is old. I just need to be his right hand and make him happy. 
+
+EndQueue
