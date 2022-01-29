@@ -5,7 +5,9 @@ using UnityEngine.UI;
 
 public class DialogueTrigger : MonoBehaviour
 {
-    public TextAsset dialogueTextFile;
+    public TextAsset[] dialogueTextFile;
+
+    private int interactAmt = 0;
 
     private GameObject interactTextBox;
     private Text interactText;
@@ -32,7 +34,7 @@ public class DialogueTrigger : MonoBehaviour
 
     private void ReadTextFile()
     {
-        string txt = dialogueTextFile.text;
+        string txt = dialogueTextFile[interactAmt].text;
 
         string[] lines = txt.Split(System.Environment.NewLine.ToCharArray());
 
@@ -54,6 +56,11 @@ public class DialogueTrigger : MonoBehaviour
             }
         }
         dialogue.Enqueue("EndQueue");
+
+        if (interactAmt != dialogueTextFile.Length - 1)
+        {
+            interactAmt += 1;
+        }
     }
 
     private void OnTriggerEnter(Collider other)
