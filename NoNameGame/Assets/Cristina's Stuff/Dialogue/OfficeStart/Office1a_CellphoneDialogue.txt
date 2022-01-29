@@ -14,10 +14,9 @@ What? I need to leave a tip? Ugh...
 
 **Choices**
 
-[CHOICE=1][*0]
-Don't leave a tip.
-[CHOICE=2]
-[*1]Leave a tip. 
+[CHOICE=1]Don't leave a tip.
+[CHOICE=2][*1]
+Leave a tip. 
 
 [1] You know, I don't really care. Leaving a tip won't make a difference.
 

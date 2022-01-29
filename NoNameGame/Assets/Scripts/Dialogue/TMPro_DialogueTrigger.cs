@@ -2,13 +2,24 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
-public class DialogueTrigger : MonoBehaviour
+public class TMPro_DialogueTrigger : MonoBehaviour
 {
-    public TextAsset dialogueTextFile;
+    public TextAsset[] dialogueTextFile;
+
+    public string interactionText;
+
+    [Space(20)]
+    public int objectRequirement;
+
+    [Space(10)]
+    public bool colorAnObject = false;
+
+    private int interactAmt = 0;
 
     private GameObject interactTextBox;
-    private Text interactText;
+    private TMP_Text interactText;
 
     private Queue<string> dialogue = new Queue<string>();
 
@@ -16,23 +27,33 @@ public class DialogueTrigger : MonoBehaviour
     private float nextTime = 0f;
 
     private bool dialogueTriggered = false;
+    private bool isInteractedWith = false;
 
-    private InteractManager intManagerRef;
+    private TMPro_InteractManager intManagerRef;
 
     private void Awake()
     {
-        intManagerRef = FindObjectOfType<InteractManager>();
+        intManagerRef = FindObjectOfType<TMPro_InteractManager>();
     }
 
     private void TriggerDialogue()
     {
         ReadTextFile();
-        FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
+        FindObjectOfType<TMPro_DialogueManager>().StartDialogue(dialogue);
+        if (!isInteractedWith)
+        {
+            ChangeStatus();
+            if (colorAnObject)
+            {
+                FindObjectOfType<TMPro_DialogueManager>().ChangeAnObject();
+            }
+            isInteractedWith = true;
+        }
     }
 
     private void ReadTextFile()
     {
-        string txt = dialogueTextFile.text;
+        string txt = dialogueTextFile[interactAmt].text;
 
         string[] lines = txt.Split(System.Environment.NewLine.ToCharArray());
 
@@ -54,13 +75,23 @@ public class DialogueTrigger : MonoBehaviour
             }
         }
         dialogue.Enqueue("EndQueue");
+
+        if (interactAmt != dialogueTextFile.Length - 1)
+        {
+            interactAmt += 1;
+        }
+    }
+
+    private void ChangeStatus()
+    {
+        FindObjectOfType<TMPro_DialogueManager>().AddRequiredObjects(objectRequirement);
     }
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Player" && dialogueTriggered == false)
         {
-            intManagerRef.ShowInteractText("'E' to Talk");
+            intManagerRef.ShowInteractText(interactionText);
         }
     }
 
@@ -68,8 +99,8 @@ public class DialogueTrigger : MonoBehaviour
     {
         if (other.gameObject.tag == "Player" && dialogueTriggered == false && Input.GetKey(KeyCode.E))
         {
-            TriggerDialogue();
             dialogueTriggered = true;
+            TriggerDialogue();
             intManagerRef.HideInteractText();
             Debug.Log("Collision");
         }
@@ -78,7 +109,7 @@ public class DialogueTrigger : MonoBehaviour
         if (other.gameObject.tag == "Player" && Input.GetKey(KeyCode.Space) && nextTime < Time.timeSinceLevelLoad && dialogueTriggered == true)
         {
             nextTime = Time.timeSinceLevelLoad + waitTime;
-            FindObjectOfType<DialogueManager>().AdvanceDialogue();
+            FindObjectOfType<TMPro_DialogueManager>().AdvanceDialogue();
         }
     }
 
@@ -86,7 +117,8 @@ public class DialogueTrigger : MonoBehaviour
     {
         if (other.gameObject.tag == "Player" && dialogueTriggered == true)
         {
-            FindObjectOfType<DialogueManager>().EndDialogue();            
+            FindObjectOfType<TMPro_DialogueManager>().EndDialogue();
+            dialogueTriggered = false;
         }
         intManagerRef.HideInteractText();
     }
