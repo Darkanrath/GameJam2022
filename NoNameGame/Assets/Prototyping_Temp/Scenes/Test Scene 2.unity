@@ -383,6 +383,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &815122859
 GameObject:
@@ -707,6 +708,8 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 8
+=======
+>>>>>>> parent of 382f7a4 (FadeTransition Implemented)
 =======
 >>>>>>> parent of 382f7a4 (FadeTransition Implemented)
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
