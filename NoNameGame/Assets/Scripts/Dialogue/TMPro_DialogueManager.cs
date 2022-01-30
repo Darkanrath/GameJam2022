@@ -98,7 +98,6 @@ public class TMPro_DialogueManager : MonoBehaviour
     {
         if (inputStream.Peek().Contains("[LOADSCENE="))
         {
-            Debug.Log("Loading Scene");
             ShouldLoadScene();
         }
         else if (inputStream.Peek().Contains("EndQueue"))
@@ -233,8 +232,7 @@ public class TMPro_DialogueManager : MonoBehaviour
 
     private void ShouldLoadScene()
     {
-        string sceneIndex = inputStream.Dequeue().Substring(11, 1);
-        Debug.Log(sceneIndex);
+        string sceneIndex = inputStream.Dequeue().Substring(name.IndexOf('=') + 1, name.IndexOf(']') - (name.IndexOf('=') + 1));
         if (inputStream.Peek().Contains("[*"))
         {
             string requirement = inputStream.Dequeue().Substring(2, 1);

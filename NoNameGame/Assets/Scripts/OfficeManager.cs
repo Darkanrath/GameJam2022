@@ -6,9 +6,6 @@ public class OfficeManager : MonoBehaviour
 {
     public GameObject officeHolder;
 
-    [Space(20)]
-    public int objectsToColor = 1;
-
     private List<GameObject> colorableObjects = new List<GameObject>();
 
     private List<GameObject> officeObjectSets = new List<GameObject>();
@@ -36,17 +33,14 @@ public class OfficeManager : MonoBehaviour
 
     public void ChangeAnObject()
     {
-        for (int x = objectsToColor; x > 0; x--)
+        int randomPick = Random.Range(0, colorableObjects.Count - 1);
+
+        if (colorableObjects[randomPick] != null)
         {
-            int randomPick = Random.Range(0, colorableObjects.Count - 1);
+            colorableObjects[randomPick].GetComponent<ColorObject>().ChangeColor();
 
-            if (colorableObjects[randomPick] != null)
-            {
-                colorableObjects[randomPick].GetComponent<ColorObject>().ChangeColor();
-
-                colorableObjects.RemoveAt(randomPick);
-                Debug.Log(colorableObjects[randomPick]);
-            }
+            colorableObjects.RemoveAt(randomPick);
+            Debug.Log(colorableObjects[randomPick]);
         }
     }
 
