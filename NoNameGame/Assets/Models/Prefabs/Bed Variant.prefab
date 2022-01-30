@@ -63,17 +63,45 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 180
       objectReference: {fileID: 0}
+    - target: {fileID: -8513424388201257645, guid: b672a9356ff202141928416b1a1ffefe, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: -7609145667655734672, guid: b672a9356ff202141928416b1a1ffefe, type: 3}
       propertyPath: m_TagString
       value: ColorChange
+      objectReference: {fileID: 0}
+    - target: {fileID: -7609145667655734672, guid: b672a9356ff202141928416b1a1ffefe, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: -7235015103121818086, guid: b672a9356ff202141928416b1a1ffefe, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: -3957782524123411102, guid: b672a9356ff202141928416b1a1ffefe, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: b672a9356ff202141928416b1a1ffefe, type: 3}
       propertyPath: m_Name
       value: Bed Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b672a9356ff202141928416b1a1ffefe, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 1170970068873931921, guid: b672a9356ff202141928416b1a1ffefe, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 78c78ead33bf26544baab6346c723691, type: 2}
+    - target: {fileID: 6147352175773068163, guid: b672a9356ff202141928416b1a1ffefe, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 6618128200071642861, guid: b672a9356ff202141928416b1a1ffefe, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b672a9356ff202141928416b1a1ffefe, type: 3}

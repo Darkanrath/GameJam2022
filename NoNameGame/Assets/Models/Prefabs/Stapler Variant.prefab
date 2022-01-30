@@ -69,7 +69,11 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 3122220584a477046b4b0b95a751bf1f, type: 2}
     - target: {fileID: 919132149155446097, guid: 9f620d84ca4fb3548a435570b0578a44, type: 3}
       propertyPath: m_Name
-      value: Stapler
+      value: Stapler Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9f620d84ca4fb3548a435570b0578a44, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9f620d84ca4fb3548a435570b0578a44, type: 3}

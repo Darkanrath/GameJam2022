@@ -14,7 +14,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &3142552070406505038
 Transform:
@@ -248,6 +248,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Purple Book Variant (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 6881848396739906083, guid: fa2ade5a70937344296532d564d87dcd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa2ade5a70937344296532d564d87dcd, type: 3}
 --- !u!4 &9175655972988250246 stripped
@@ -265,6 +269,10 @@ PrefabInstance:
     - target: {fileID: 2838507458044341274, guid: 2fa0a8cf9ce166644bb6676831e0a7d5, type: 3}
       propertyPath: m_Name
       value: White Book Variant (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2838507458044341274, guid: 2fa0a8cf9ce166644bb6676831e0a7d5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 3183965577965729440, guid: 2fa0a8cf9ce166644bb6676831e0a7d5, type: 3}
       propertyPath: m_RootOrder
@@ -340,6 +348,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Green Book Variant (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 6944957966402761564, guid: ea4c6389cf75798408c64ec3ea07c88c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 7722163550780975590, guid: ea4c6389cf75798408c64ec3ea07c88c, type: 3}
       propertyPath: m_RootOrder
       value: 55
@@ -413,6 +425,10 @@ PrefabInstance:
     - target: {fileID: 2838507458044341274, guid: 2fa0a8cf9ce166644bb6676831e0a7d5, type: 3}
       propertyPath: m_Name
       value: White Book Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 2838507458044341274, guid: 2fa0a8cf9ce166644bb6676831e0a7d5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 3183965577965729440, guid: 2fa0a8cf9ce166644bb6676831e0a7d5, type: 3}
       propertyPath: m_RootOrder
@@ -544,6 +560,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Red Book Variant (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 909916001561346397, guid: 4e8f36274d7d3f54c8ec99872af75246, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4e8f36274d7d3f54c8ec99872af75246, type: 3}
 --- !u!4 &3204290320601316228 stripped
@@ -617,6 +637,10 @@ PrefabInstance:
     - target: {fileID: 909916001561346397, guid: 4e8f36274d7d3f54c8ec99872af75246, type: 3}
       propertyPath: m_Name
       value: Red Book Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 909916001561346397, guid: 4e8f36274d7d3f54c8ec99872af75246, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4e8f36274d7d3f54c8ec99872af75246, type: 3}
@@ -766,6 +790,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brown Book Variant (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 7964251998243887796, guid: e8ba5221bab3a3245aab34f1f2c01877, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e8ba5221bab3a3245aab34f1f2c01877, type: 3}
 --- !u!4 &5643558059136024193 stripped
@@ -840,6 +868,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Red Book Variant (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 909916001561346397, guid: 4e8f36274d7d3f54c8ec99872af75246, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4e8f36274d7d3f54c8ec99872af75246, type: 3}
 --- !u!4 &3204290320497749037 stripped
@@ -857,6 +889,10 @@ PrefabInstance:
     - target: {fileID: 6944957966402761564, guid: ea4c6389cf75798408c64ec3ea07c88c, type: 3}
       propertyPath: m_Name
       value: Green Book Variant (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6944957966402761564, guid: ea4c6389cf75798408c64ec3ea07c88c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 7722163550780975590, guid: ea4c6389cf75798408c64ec3ea07c88c, type: 3}
       propertyPath: m_RootOrder
@@ -932,6 +968,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Green Book Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 6944957966402761564, guid: ea4c6389cf75798408c64ec3ea07c88c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 7722163550780975590, guid: ea4c6389cf75798408c64ec3ea07c88c, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -1005,6 +1045,10 @@ PrefabInstance:
     - target: {fileID: 2838507458044341274, guid: 2fa0a8cf9ce166644bb6676831e0a7d5, type: 3}
       propertyPath: m_Name
       value: White Book Variant (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2838507458044341274, guid: 2fa0a8cf9ce166644bb6676831e0a7d5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 3183965577965729440, guid: 2fa0a8cf9ce166644bb6676831e0a7d5, type: 3}
       propertyPath: m_RootOrder
@@ -1136,6 +1180,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Red Book Variant (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 909916001561346397, guid: 4e8f36274d7d3f54c8ec99872af75246, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4e8f36274d7d3f54c8ec99872af75246, type: 3}
 --- !u!4 &3204290320854523789 stripped
@@ -1209,6 +1257,10 @@ PrefabInstance:
     - target: {fileID: 6881848396739906083, guid: fa2ade5a70937344296532d564d87dcd, type: 3}
       propertyPath: m_Name
       value: Purple Book Variant (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6881848396739906083, guid: fa2ade5a70937344296532d564d87dcd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa2ade5a70937344296532d564d87dcd, type: 3}
@@ -1358,6 +1410,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Red Book Variant (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 909916001561346397, guid: 4e8f36274d7d3f54c8ec99872af75246, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4e8f36274d7d3f54c8ec99872af75246, type: 3}
 --- !u!4 &3204290320711067246 stripped
@@ -1375,6 +1431,10 @@ PrefabInstance:
     - target: {fileID: 2838507458044341274, guid: 2fa0a8cf9ce166644bb6676831e0a7d5, type: 3}
       propertyPath: m_Name
       value: White Book Variant (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2838507458044341274, guid: 2fa0a8cf9ce166644bb6676831e0a7d5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 3183965577965729440, guid: 2fa0a8cf9ce166644bb6676831e0a7d5, type: 3}
       propertyPath: m_RootOrder
@@ -1449,6 +1509,10 @@ PrefabInstance:
     - target: {fileID: 2838507458044341274, guid: 2fa0a8cf9ce166644bb6676831e0a7d5, type: 3}
       propertyPath: m_Name
       value: White Book Variant (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2838507458044341274, guid: 2fa0a8cf9ce166644bb6676831e0a7d5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 3183965577965729440, guid: 2fa0a8cf9ce166644bb6676831e0a7d5, type: 3}
       propertyPath: m_RootOrder
@@ -1580,6 +1644,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Purple Book Variant (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6881848396739906083, guid: fa2ade5a70937344296532d564d87dcd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa2ade5a70937344296532d564d87dcd, type: 3}
 --- !u!4 &9175655973340830708 stripped
@@ -1597,6 +1665,10 @@ PrefabInstance:
     - target: {fileID: 2838507458044341274, guid: 2fa0a8cf9ce166644bb6676831e0a7d5, type: 3}
       propertyPath: m_Name
       value: White Book Variant (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2838507458044341274, guid: 2fa0a8cf9ce166644bb6676831e0a7d5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 3183965577965729440, guid: 2fa0a8cf9ce166644bb6676831e0a7d5, type: 3}
       propertyPath: m_RootOrder
@@ -1728,6 +1800,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Purple Book Variant (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 6881848396739906083, guid: fa2ade5a70937344296532d564d87dcd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa2ade5a70937344296532d564d87dcd, type: 3}
 --- !u!4 &9175655972434611369 stripped
@@ -1801,6 +1877,10 @@ PrefabInstance:
     - target: {fileID: 7964251998243887796, guid: e8ba5221bab3a3245aab34f1f2c01877, type: 3}
       propertyPath: m_Name
       value: Brown Book Variant (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7964251998243887796, guid: e8ba5221bab3a3245aab34f1f2c01877, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e8ba5221bab3a3245aab34f1f2c01877, type: 3}
@@ -1876,6 +1956,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brown Book Variant (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 7964251998243887796, guid: e8ba5221bab3a3245aab34f1f2c01877, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e8ba5221bab3a3245aab34f1f2c01877, type: 3}
 --- !u!4 &5643558058648449748 stripped
@@ -1950,6 +2034,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Red Book Variant (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 909916001561346397, guid: 4e8f36274d7d3f54c8ec99872af75246, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4e8f36274d7d3f54c8ec99872af75246, type: 3}
 --- !u!4 &3204290320979546822 stripped
@@ -1967,6 +2055,10 @@ PrefabInstance:
     - target: {fileID: 6944957966402761564, guid: ea4c6389cf75798408c64ec3ea07c88c, type: 3}
       propertyPath: m_Name
       value: Green Book Variant (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6944957966402761564, guid: ea4c6389cf75798408c64ec3ea07c88c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 7722163550780975590, guid: ea4c6389cf75798408c64ec3ea07c88c, type: 3}
       propertyPath: m_RootOrder
@@ -2098,6 +2190,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Red Book Variant (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 909916001561346397, guid: 4e8f36274d7d3f54c8ec99872af75246, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4e8f36274d7d3f54c8ec99872af75246, type: 3}
 --- !u!4 &3204290320947485667 stripped
@@ -2115,6 +2211,10 @@ PrefabInstance:
     - target: {fileID: 2838507458044341274, guid: 2fa0a8cf9ce166644bb6676831e0a7d5, type: 3}
       propertyPath: m_Name
       value: White Book Variant (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2838507458044341274, guid: 2fa0a8cf9ce166644bb6676831e0a7d5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 3183965577965729440, guid: 2fa0a8cf9ce166644bb6676831e0a7d5, type: 3}
       propertyPath: m_RootOrder
@@ -2246,6 +2346,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Purple Book Variant (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 6881848396739906083, guid: fa2ade5a70937344296532d564d87dcd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa2ade5a70937344296532d564d87dcd, type: 3}
 --- !u!4 &9175655972786773954 stripped
@@ -2319,6 +2423,10 @@ PrefabInstance:
     - target: {fileID: 909916001561346397, guid: 4e8f36274d7d3f54c8ec99872af75246, type: 3}
       propertyPath: m_Name
       value: Red Book Variant (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 909916001561346397, guid: 4e8f36274d7d3f54c8ec99872af75246, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4e8f36274d7d3f54c8ec99872af75246, type: 3}
@@ -2468,6 +2576,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brown Book Variant (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7964251998243887796, guid: e8ba5221bab3a3245aab34f1f2c01877, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e8ba5221bab3a3245aab34f1f2c01877, type: 3}
 --- !u!4 &5643558058852520513 stripped
@@ -2542,6 +2654,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Red Book Variant (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 909916001561346397, guid: 4e8f36274d7d3f54c8ec99872af75246, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4e8f36274d7d3f54c8ec99872af75246, type: 3}
 --- !u!4 &3204290321461328877 stripped
@@ -2615,6 +2731,10 @@ PrefabInstance:
     - target: {fileID: 909916001561346397, guid: 4e8f36274d7d3f54c8ec99872af75246, type: 3}
       propertyPath: m_Name
       value: Red Book Variant (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 909916001561346397, guid: 4e8f36274d7d3f54c8ec99872af75246, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4e8f36274d7d3f54c8ec99872af75246, type: 3}
@@ -2708,6 +2828,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: White Book Variant (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 2838507458044341274, guid: 2fa0a8cf9ce166644bb6676831e0a7d5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 3183965577965729440, guid: 2fa0a8cf9ce166644bb6676831e0a7d5, type: 3}
       propertyPath: m_RootOrder
       value: 17
@@ -2781,6 +2905,10 @@ PrefabInstance:
     - target: {fileID: 6944957966402761564, guid: ea4c6389cf75798408c64ec3ea07c88c, type: 3}
       propertyPath: m_Name
       value: Green Book Variant (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6944957966402761564, guid: ea4c6389cf75798408c64ec3ea07c88c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 7722163550780975590, guid: ea4c6389cf75798408c64ec3ea07c88c, type: 3}
       propertyPath: m_RootOrder
@@ -2912,6 +3040,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Purple Book Variant (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 6881848396739906083, guid: fa2ade5a70937344296532d564d87dcd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa2ade5a70937344296532d564d87dcd, type: 3}
 --- !u!4 &9175655972878124700 stripped
@@ -3004,6 +3136,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: White Book Variant (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 2838507458044341274, guid: 2fa0a8cf9ce166644bb6676831e0a7d5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 3183965577965729440, guid: 2fa0a8cf9ce166644bb6676831e0a7d5, type: 3}
       propertyPath: m_RootOrder
       value: 38
@@ -3078,6 +3214,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Green Book Variant (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 6944957966402761564, guid: ea4c6389cf75798408c64ec3ea07c88c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 7722163550780975590, guid: ea4c6389cf75798408c64ec3ea07c88c, type: 3}
       propertyPath: m_RootOrder
       value: 50
@@ -3151,6 +3291,10 @@ PrefabInstance:
     - target: {fileID: 6944957966402761564, guid: ea4c6389cf75798408c64ec3ea07c88c, type: 3}
       propertyPath: m_Name
       value: Green Book Variant (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6944957966402761564, guid: ea4c6389cf75798408c64ec3ea07c88c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 7722163550780975590, guid: ea4c6389cf75798408c64ec3ea07c88c, type: 3}
       propertyPath: m_RootOrder
@@ -3282,6 +3426,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Red Book Variant (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 909916001561346397, guid: 4e8f36274d7d3f54c8ec99872af75246, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4e8f36274d7d3f54c8ec99872af75246, type: 3}
 --- !u!4 &3204290319509501383 stripped
@@ -3299,6 +3447,10 @@ PrefabInstance:
     - target: {fileID: 2838507458044341274, guid: 2fa0a8cf9ce166644bb6676831e0a7d5, type: 3}
       propertyPath: m_Name
       value: White Book Variant (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2838507458044341274, guid: 2fa0a8cf9ce166644bb6676831e0a7d5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 3183965577965729440, guid: 2fa0a8cf9ce166644bb6676831e0a7d5, type: 3}
       propertyPath: m_RootOrder
@@ -3374,6 +3526,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: White Book Variant (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 2838507458044341274, guid: 2fa0a8cf9ce166644bb6676831e0a7d5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 3183965577965729440, guid: 2fa0a8cf9ce166644bb6676831e0a7d5, type: 3}
       propertyPath: m_RootOrder
       value: 58
@@ -3448,6 +3604,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: White Book Variant (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 2838507458044341274, guid: 2fa0a8cf9ce166644bb6676831e0a7d5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 3183965577965729440, guid: 2fa0a8cf9ce166644bb6676831e0a7d5, type: 3}
       propertyPath: m_RootOrder
       value: 64
@@ -3521,6 +3681,10 @@ PrefabInstance:
     - target: {fileID: 2838507458044341274, guid: 2fa0a8cf9ce166644bb6676831e0a7d5, type: 3}
       propertyPath: m_Name
       value: White Book Variant (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2838507458044341274, guid: 2fa0a8cf9ce166644bb6676831e0a7d5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 3183965577965729440, guid: 2fa0a8cf9ce166644bb6676831e0a7d5, type: 3}
       propertyPath: m_RootOrder
@@ -3652,6 +3816,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Purple Book Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 6881848396739906083, guid: fa2ade5a70937344296532d564d87dcd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa2ade5a70937344296532d564d87dcd, type: 3}
 --- !u!4 &9175655974149632428 stripped
@@ -3669,6 +3837,10 @@ PrefabInstance:
     - target: {fileID: 2838507458044341274, guid: 2fa0a8cf9ce166644bb6676831e0a7d5, type: 3}
       propertyPath: m_Name
       value: White Book Variant (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2838507458044341274, guid: 2fa0a8cf9ce166644bb6676831e0a7d5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 3183965577965729440, guid: 2fa0a8cf9ce166644bb6676831e0a7d5, type: 3}
       propertyPath: m_RootOrder
@@ -3800,6 +3972,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brown Book Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 7964251998243887796, guid: e8ba5221bab3a3245aab34f1f2c01877, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e8ba5221bab3a3245aab34f1f2c01877, type: 3}
 --- !u!4 &5643558058315035227 stripped
@@ -3817,6 +3993,10 @@ PrefabInstance:
     - target: {fileID: 2838507458044341274, guid: 2fa0a8cf9ce166644bb6676831e0a7d5, type: 3}
       propertyPath: m_Name
       value: White Book Variant (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2838507458044341274, guid: 2fa0a8cf9ce166644bb6676831e0a7d5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 3183965577965729440, guid: 2fa0a8cf9ce166644bb6676831e0a7d5, type: 3}
       propertyPath: m_RootOrder
@@ -3966,6 +4146,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: White Book Variant (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 2838507458044341274, guid: 2fa0a8cf9ce166644bb6676831e0a7d5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 3183965577965729440, guid: 2fa0a8cf9ce166644bb6676831e0a7d5, type: 3}
       propertyPath: m_RootOrder
       value: 23
@@ -4096,6 +4280,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Red Book Variant (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 909916001561346397, guid: 4e8f36274d7d3f54c8ec99872af75246, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4e8f36274d7d3f54c8ec99872af75246, type: 3}
 --- !u!4 &3204290319658674580 stripped
@@ -4113,6 +4301,10 @@ PrefabInstance:
     - target: {fileID: 2838507458044341274, guid: 2fa0a8cf9ce166644bb6676831e0a7d5, type: 3}
       propertyPath: m_Name
       value: White Book Variant (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2838507458044341274, guid: 2fa0a8cf9ce166644bb6676831e0a7d5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 3183965577965729440, guid: 2fa0a8cf9ce166644bb6676831e0a7d5, type: 3}
       propertyPath: m_RootOrder
@@ -4188,6 +4380,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: White Book Variant (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 2838507458044341274, guid: 2fa0a8cf9ce166644bb6676831e0a7d5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 3183965577965729440, guid: 2fa0a8cf9ce166644bb6676831e0a7d5, type: 3}
       propertyPath: m_RootOrder
       value: 39
@@ -4261,6 +4457,10 @@ PrefabInstance:
     - target: {fileID: 6944957966402761564, guid: ea4c6389cf75798408c64ec3ea07c88c, type: 3}
       propertyPath: m_Name
       value: Green Book Variant (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6944957966402761564, guid: ea4c6389cf75798408c64ec3ea07c88c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 7722163550780975590, guid: ea4c6389cf75798408c64ec3ea07c88c, type: 3}
       propertyPath: m_RootOrder
@@ -4392,6 +4592,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Red Book Variant (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 909916001561346397, guid: 4e8f36274d7d3f54c8ec99872af75246, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4e8f36274d7d3f54c8ec99872af75246, type: 3}
 --- !u!4 &3204290320044664566 stripped
@@ -4466,6 +4670,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brown Book Variant (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 7964251998243887796, guid: e8ba5221bab3a3245aab34f1f2c01877, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e8ba5221bab3a3245aab34f1f2c01877, type: 3}
 --- !u!4 &5643558057415610157 stripped
@@ -4539,6 +4747,10 @@ PrefabInstance:
     - target: {fileID: 909916001561346397, guid: 4e8f36274d7d3f54c8ec99872af75246, type: 3}
       propertyPath: m_Name
       value: Red Book Variant (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 909916001561346397, guid: 4e8f36274d7d3f54c8ec99872af75246, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4e8f36274d7d3f54c8ec99872af75246, type: 3}
@@ -4631,6 +4843,10 @@ PrefabInstance:
     - target: {fileID: 6944957966402761564, guid: ea4c6389cf75798408c64ec3ea07c88c, type: 3}
       propertyPath: m_Name
       value: Green Book Variant (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6944957966402761564, guid: ea4c6389cf75798408c64ec3ea07c88c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 7722163550780975590, guid: ea4c6389cf75798408c64ec3ea07c88c, type: 3}
       propertyPath: m_RootOrder
@@ -4762,6 +4978,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brown Book Variant (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 7964251998243887796, guid: e8ba5221bab3a3245aab34f1f2c01877, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e8ba5221bab3a3245aab34f1f2c01877, type: 3}
 --- !u!4 &5643558057479224934 stripped
@@ -4836,6 +5056,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brown Book Variant (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 7964251998243887796, guid: e8ba5221bab3a3245aab34f1f2c01877, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e8ba5221bab3a3245aab34f1f2c01877, type: 3}
 --- !u!4 &5643558057459280819 stripped
@@ -4853,6 +5077,10 @@ PrefabInstance:
     - target: {fileID: 2838507458044341274, guid: 2fa0a8cf9ce166644bb6676831e0a7d5, type: 3}
       propertyPath: m_Name
       value: White Book Variant (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2838507458044341274, guid: 2fa0a8cf9ce166644bb6676831e0a7d5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 3183965577965729440, guid: 2fa0a8cf9ce166644bb6676831e0a7d5, type: 3}
       propertyPath: m_RootOrder
@@ -4927,6 +5155,10 @@ PrefabInstance:
     - target: {fileID: 2838507458044341274, guid: 2fa0a8cf9ce166644bb6676831e0a7d5, type: 3}
       propertyPath: m_Name
       value: White Book Variant (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2838507458044341274, guid: 2fa0a8cf9ce166644bb6676831e0a7d5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 3183965577965729440, guid: 2fa0a8cf9ce166644bb6676831e0a7d5, type: 3}
       propertyPath: m_RootOrder
@@ -5058,6 +5290,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Purple Book Variant (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 6881848396739906083, guid: fa2ade5a70937344296532d564d87dcd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa2ade5a70937344296532d564d87dcd, type: 3}
 --- !u!4 &9175655973634087022 stripped
@@ -5131,6 +5367,10 @@ PrefabInstance:
     - target: {fileID: 6881848396739906083, guid: fa2ade5a70937344296532d564d87dcd, type: 3}
       propertyPath: m_Name
       value: Purple Book Variant (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6881848396739906083, guid: fa2ade5a70937344296532d564d87dcd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa2ade5a70937344296532d564d87dcd, type: 3}
@@ -5206,6 +5446,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brown Book Variant (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 7964251998243887796, guid: e8ba5221bab3a3245aab34f1f2c01877, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e8ba5221bab3a3245aab34f1f2c01877, type: 3}
 --- !u!4 &5643558057697119377 stripped
@@ -5280,6 +5524,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brown Book Variant (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 7964251998243887796, guid: e8ba5221bab3a3245aab34f1f2c01877, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e8ba5221bab3a3245aab34f1f2c01877, type: 3}
 --- !u!4 &5643558057669019477 stripped
@@ -5297,6 +5545,10 @@ PrefabInstance:
     - target: {fileID: 6944957966402761564, guid: ea4c6389cf75798408c64ec3ea07c88c, type: 3}
       propertyPath: m_Name
       value: Green Book Variant (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6944957966402761564, guid: ea4c6389cf75798408c64ec3ea07c88c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 7722163550780975590, guid: ea4c6389cf75798408c64ec3ea07c88c, type: 3}
       propertyPath: m_RootOrder
@@ -5428,6 +5680,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Purple Book Variant (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 6881848396739906083, guid: fa2ade5a70937344296532d564d87dcd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa2ade5a70937344296532d564d87dcd, type: 3}
 --- !u!4 &9175655973752463701 stripped
@@ -5449,6 +5705,10 @@ PrefabInstance:
     - target: {fileID: 6074806230538994931, guid: 8c378342bb54d4841b4ac270822bfa02, type: 3}
       propertyPath: m_Name
       value: bookShelfGAMJAM (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6074806230538994931, guid: 8c378342bb54d4841b4ac270822bfa02, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 6847121491858497097, guid: 8c378342bb54d4841b4ac270822bfa02, type: 3}
       propertyPath: m_RootOrder
@@ -5672,6 +5932,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: White Book Variant (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 2838507458044341274, guid: 2fa0a8cf9ce166644bb6676831e0a7d5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 3183965577965729440, guid: 2fa0a8cf9ce166644bb6676831e0a7d5, type: 3}
       propertyPath: m_RootOrder
       value: 32
@@ -5801,6 +6065,10 @@ PrefabInstance:
     - target: {fileID: 7964251998243887796, guid: e8ba5221bab3a3245aab34f1f2c01877, type: 3}
       propertyPath: m_Name
       value: Brown Book Variant (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7964251998243887796, guid: e8ba5221bab3a3245aab34f1f2c01877, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e8ba5221bab3a3245aab34f1f2c01877, type: 3}

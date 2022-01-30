@@ -63,13 +63,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8391222552659086748, guid: b64c72a45b49c374f8346ab6dafed6c6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: -4683669308469848369, guid: b64c72a45b49c374f8346ab6dafed6c6, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 3e80b545142f651439565ce8f3f08a15, type: 2}
     - target: {fileID: 919132149155446097, guid: b64c72a45b49c374f8346ab6dafed6c6, type: 3}
       propertyPath: m_Name
-      value: ComputerMouseGAMJAM
+      value: ComputerMouseGAMJAM Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b64c72a45b49c374f8346ab6dafed6c6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 5233112405309087440, guid: b64c72a45b49c374f8346ab6dafed6c6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b64c72a45b49c374f8346ab6dafed6c6, type: 3}

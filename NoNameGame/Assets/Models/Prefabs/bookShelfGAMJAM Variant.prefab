@@ -65,7 +65,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: da46eb5fd66bcb845b39e538fe99e1ac, type: 3}
       propertyPath: m_Name
-      value: bookShelfGAMJAM
+      value: bookShelfGAMJAM Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: da46eb5fd66bcb845b39e538fe99e1ac, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: da46eb5fd66bcb845b39e538fe99e1ac, type: 3}

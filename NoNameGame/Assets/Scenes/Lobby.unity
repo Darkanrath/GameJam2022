@@ -624,7 +624,7 @@ Transform:
   - {fileID: 187994920}
   - {fileID: 1599368899}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &148330197
 PrefabInstance:
@@ -1260,7 +1260,7 @@ Transform:
   - {fileID: 661760590}
   - {fileID: 692810781}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &271756352 stripped
 Transform:
@@ -3091,6 +3091,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textFile: {fileID: 0}
+  interactionText: 
   objectRequirement: 0
   colorAnObject: 0
 --- !u!114 &816842639
@@ -3105,7 +3106,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b473e8da7d3a0e47a531d4a46ba55b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueTextFile: {fileID: 4900000, guid: 5e2c1383c337aa84f91bbb5ddb8960d2, type: 3}
+  dialogueTextFile:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  interactionText: 
 --- !u!4 &816842640
 Transform:
   m_ObjectHideFlags: 0
@@ -3118,7 +3123,7 @@ Transform:
   m_LocalScale: {x: 29.212025, y: 4.2104645, z: 9.013929}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &824262853 stripped
 Transform:
@@ -3536,7 +3541,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1052245117 stripped
 Transform:
@@ -4250,7 +4255,7 @@ Transform:
   - {fileID: 205954167}
   - {fileID: 1420127502}
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1286569221
 BoxCollider:
@@ -4278,6 +4283,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textFile: {fileID: 0}
+  interactionText: 
   objectRequirement: 0
   colorAnObject: 0
 --- !u!114 &1286569223
@@ -4292,7 +4298,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b473e8da7d3a0e47a531d4a46ba55b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueTextFile: {fileID: 4900000, guid: ba6d47e2b8c4e70469741d7380e94e78, type: 3}
+  dialogueTextFile:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  interactionText: 
 --- !u!1 &1298895652
 GameObject:
   m_ObjectHideFlags: 0
@@ -5238,6 +5248,63 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1443420270}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1001 &1446107433
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8118176519987291090, guid: ce1d15cb17c471a458072e6b47f97cbc, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8118176519987291090, guid: ce1d15cb17c471a458072e6b47f97cbc, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.211
+      objectReference: {fileID: 0}
+    - target: {fileID: 8118176519987291090, guid: ce1d15cb17c471a458072e6b47f97cbc, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.331
+      objectReference: {fileID: 0}
+    - target: {fileID: 8118176519987291090, guid: ce1d15cb17c471a458072e6b47f97cbc, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -4.5046906
+      objectReference: {fileID: 0}
+    - target: {fileID: 8118176519987291090, guid: ce1d15cb17c471a458072e6b47f97cbc, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8118176519987291090, guid: ce1d15cb17c471a458072e6b47f97cbc, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8118176519987291090, guid: ce1d15cb17c471a458072e6b47f97cbc, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8118176519987291090, guid: ce1d15cb17c471a458072e6b47f97cbc, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8118176519987291090, guid: ce1d15cb17c471a458072e6b47f97cbc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8118176519987291090, guid: ce1d15cb17c471a458072e6b47f97cbc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 8118176519987291090, guid: ce1d15cb17c471a458072e6b47f97cbc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8926800924063709544, guid: ce1d15cb17c471a458072e6b47f97cbc, type: 3}
+      propertyPath: m_Name
+      value: coffeeMakerGAMJAM Variant
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ce1d15cb17c471a458072e6b47f97cbc, type: 3}
 --- !u!1 &1450283227
 GameObject:
   m_ObjectHideFlags: 0
@@ -5752,7 +5819,7 @@ Transform:
   m_Children:
   - {fileID: 2024902327021824897}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: -15.258, z: 0}
 --- !u!65 &1549827794
 BoxCollider:
@@ -5780,6 +5847,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textFile: {fileID: 0}
+  interactionText: 
   objectRequirement: 0
   colorAnObject: 0
 --- !u!114 &1549827796
@@ -5794,7 +5862,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b473e8da7d3a0e47a531d4a46ba55b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueTextFile: {fileID: 4900000, guid: 22e50d79cdf4b104c8358b2ad740b04a, type: 3}
+  dialogueTextFile:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  interactionText: 
 --- !u!1 &1552020786 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7784601920956296796, guid: a27798ec12d73994995827181cdac296, type: 3}
@@ -6098,7 +6170,7 @@ Transform:
   - {fileID: 668893331}
   - {fileID: 1817070191}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1590762372 stripped
 Transform:
@@ -7145,6 +7217,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textFile: {fileID: 0}
+  interactionText: 
   objectRequirement: 0
   colorAnObject: 0
 --- !u!114 &1803971223
@@ -7159,7 +7232,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b473e8da7d3a0e47a531d4a46ba55b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueTextFile: {fileID: 4900000, guid: 23ae5654d98753f46993ac9665a891ab, type: 3}
+  dialogueTextFile:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  interactionText: 
 --- !u!4 &1803971224
 Transform:
   m_ObjectHideFlags: 0
@@ -7173,7 +7250,7 @@ Transform:
   m_Children:
   - {fileID: 601783554}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1817070190
 GameObject:
@@ -7906,7 +7983,7 @@ Transform:
   m_LocalScale: {x: 1, y: 3.4663472, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2040940253
 GameObject:
@@ -8313,7 +8390,7 @@ Transform:
   m_LocalScale: {x: 1, y: 3.4663472, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2057708648
 GameObject:
@@ -8450,7 +8527,7 @@ Transform:
   - {fileID: 1657839074}
   - {fileID: 1373941975}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &2096838685 stripped
 Transform:
@@ -9457,7 +9534,7 @@ Transform:
   - {fileID: 877296811582460324}
   - {fileID: 3663404258173334327}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6965527731231169413
 GameObject:

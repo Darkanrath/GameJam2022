@@ -69,7 +69,31 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 1188fc49618e2ee428eef0394aedac77, type: 2}
     - target: {fileID: 919132149155446097, guid: fb027e1b99c9b1b42ad408917c3ed4bb, type: 3}
       propertyPath: m_Name
-      value: Purple Book
+      value: Purple Book Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fb027e1b99c9b1b42ad408917c3ed4bb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fb027e1b99c9b1b42ad408917c3ed4bb, type: 3}
+--- !u!1 &6881848396739906083 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: fb027e1b99c9b1b42ad408917c3ed4bb, type: 3}
+  m_PrefabInstance: {fileID: 5998888670458492786}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &-654024335480616119
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6881848396739906083}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da17be75cfe17c743a03087fec53edcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coloredTexture: {fileID: 2800000, guid: a1696365e960f6142819c6b49c7585d0, type: 3}
+  darkTexture: {fileID: 2800000, guid: 30b088e8658ba154995c5a47d9f46a98, type: 3}
+  normalMap: {fileID: 2800000, guid: f7d3409a5148a6541b45a63cd4756ed0, type: 3}
