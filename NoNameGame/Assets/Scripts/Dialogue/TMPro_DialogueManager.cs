@@ -28,8 +28,6 @@ public class TMPro_DialogueManager : MonoBehaviour
 
     private string[] dialogueText;
 
-    private List<GameObject> colorableObjects = new List<GameObject>();
-
     private Queue<string> inputStream = new Queue<string>();
 
     private PlayerMovement playerMove;
@@ -46,12 +44,6 @@ public class TMPro_DialogueManager : MonoBehaviour
         {
             ChoiceButtons[x].SetActive(false);
         }
-    }
-
-    public void AddColorableObjects()
-    {
-        colorableObjects.AddRange(GameObject.FindGameObjectsWithTag("ColorChange"));
-        //Debug.Log(colorableObjects[0]);
     }
 
     private void DisablePlayerMovement()
@@ -278,19 +270,6 @@ public class TMPro_DialogueManager : MonoBehaviour
                 mouseControl.enabled = true;
             }
             isDialogue = false;
-        }
-    }
-
-    public void ChangeAnObject()
-    {
-        int randomPick = Random.Range(0, colorableObjects.Count - 1);
-
-        if (colorableObjects[randomPick] != null)
-        {
-            colorableObjects[randomPick].GetComponent<ColorObject>().ChangeColor();
-
-            colorableObjects.RemoveAt(randomPick);
-            Debug.Log(colorableObjects[randomPick]);
         }
     }
 }

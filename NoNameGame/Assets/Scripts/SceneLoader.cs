@@ -52,8 +52,10 @@ public class SceneLoader : MonoBehaviour
             Debug.Log("Going back to Office");
             SceneManager.SetActiveScene(SceneManager.GetSceneByBuildIndex(index));
             SceneManager.UnloadSceneAsync(SceneManager.GetSceneByBuildIndex(currentSceneIndex));
+            FindObjectOfType<OfficeManager>().ShowOffice();
+            FindObjectOfType<OfficeManager>().ChangeOffice();
             player = GameObject.FindGameObjectWithTag("Player");
-            FindObjectOfType<DialogueManager>().ChangeAnObject();
+            FindObjectOfType<OfficeManager>().ChangeAnObject();
             EnablePlayer();
         }
         else
@@ -67,7 +69,9 @@ public class SceneLoader : MonoBehaviour
             {
                 Debug.Log("Heading to next scene");
                 currentSceneIndex = index;
+                FindObjectOfType<OfficeManager>().HideOffice();
                 StartCoroutine(LoadSceneAsync(index));
+                FindObjectOfType<ResultsCarrier>().ChangeSceneSpecifics();
             }
         }
     }
@@ -87,7 +91,6 @@ public class SceneLoader : MonoBehaviour
             if (index == officeIndex)
             {
                 player = GameObject.FindGameObjectWithTag("Player");
-                FindObjectOfType<DialogueManager>().AddColorableObjects();
                 officeLoadedOnce = true;
                 EnablePlayer();
             }

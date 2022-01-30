@@ -34,7 +34,7 @@ public class TMPro_InteractableObject : MonoBehaviour
             ChangeStatus();
             if (colorAnObject)
             {
-                FindObjectOfType<TMPro_DialogueManager>().ChangeAnObject();
+                FindObjectOfType<OfficeManager>().ChangeAnObject();
             }
             isInteractedWith = true;
         }
