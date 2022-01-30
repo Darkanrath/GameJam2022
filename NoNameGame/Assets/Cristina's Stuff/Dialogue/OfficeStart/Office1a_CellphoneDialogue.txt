@@ -26,6 +26,10 @@ Leave a tip.
 
 Maybe I should leave at least something. I hope this is enough.
 
+<<<<<<< HEAD
 [LOADSCENE=2]
+=======
+[SCENELOAD=1]
+>>>>>>> parent of 382f7a4 (FadeTransition Implemented)
 
 EndQueue
