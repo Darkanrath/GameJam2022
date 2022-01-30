@@ -17,18 +17,46 @@ President of THECompany.
 
 **Choices**
 [CHOICE=1]
-[CHOICE=2][*1]
+Mass Layoffs.
+[CHOICE=2][*3]
+Hire friend.
+[CHOICE=3][*4]
+Hire Enthusiastic Candidate.
+[CHOICE=4][*5]
+Hire Qualified Candidate.
 
-[CHOICE=3]
-
-[CHOICE=4]
-
-[1][1]
-
-
-[2][2]
+[1][5]
+President of THECompany, 
+I think we should downsize. What matters most is our profit margins and the investors. 
+I’m sure that some of our soon to be ex-employees will have no problems finding other jobs. 
+We would also save money spending less on payroll.
+- Signed, Mr. CEO
 
 
-[LOADSCENE=2]
+[2][5]
+President of THECompany,
+I have a friend of mine that is perfect for a manager position. 
+He’ll get the workers in-line and increase productivity. 
+With this increase of productivity, profits should go back up in no time. 
+- Signed, Mr. CEO  
+
+[3][6]
+President of THECompany,
+I think we should hire some more personnel that could increase productivity. 
+I have just the candidate in mind that I know is a hard worker. 
+I understand profits are down but it is most likely just a down market altogether,
+no reason to take drastic action. 
+- Signed, Mr. CEO
+
+[4][6]
+President of THECompany,
+I have a candidate for a position at our company. After reading their resume, 
+I believe that they're just the new blood we need to revitalize the company and bring in new ideas. 
+With these types of new hires, I believe that we could bring our company 
+to the forefront of our market. 
+- Signed, Mr. CEO
+
+
+[LOADSCENE=1]
 
 EndQueue
