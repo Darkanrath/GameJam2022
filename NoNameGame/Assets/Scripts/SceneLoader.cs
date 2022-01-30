@@ -46,7 +46,7 @@ public class SceneLoader : MonoBehaviour
     public void ChangeScene(int index)
     {
         DisablePlayer();
-
+        
         if (index == officeIndex && officeLoadedOnce)
         {
             Debug.Log("Going back to Office");

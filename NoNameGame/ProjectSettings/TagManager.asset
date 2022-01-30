@@ -7,6 +7,9 @@ TagManager:
   - ColorChange
   - OfficeSet
   - ChangeByResult
+  - ShowOnPause
+  - ShowOnSettings
+  - SwitchOnPause
   layers:
   - Default
   - TransparentFX

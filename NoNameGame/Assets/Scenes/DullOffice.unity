@@ -1198,6 +1198,10 @@ PrefabInstance:
       propertyPath: Loop
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4127369308115094892, guid: 4e09b77623d422f48bf91e3179363128, type: 3}
+      propertyPath: MaxDistance
+      value: 500
+      objectReference: {fileID: 0}
     - target: {fileID: 7824201072717384424, guid: 4e09b77623d422f48bf91e3179363128, type: 3}
       propertyPath: m_Name
       value: Player
