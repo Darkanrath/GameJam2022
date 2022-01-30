@@ -105,7 +105,7 @@ public class TMPro_DialogueTrigger : MonoBehaviour
             dialogueTriggered = true;
             TriggerDialogue();
             intManagerRef.HideInteractText();
-            Debug.Log("Collision");
+            //Debug.Log("Collision");
         }
 
         //Debug.Log(other.name);

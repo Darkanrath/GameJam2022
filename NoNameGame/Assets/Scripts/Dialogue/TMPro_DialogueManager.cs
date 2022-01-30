@@ -88,11 +88,26 @@ public class TMPro_DialogueManager : MonoBehaviour
         PrintDialogue();
     }
 
-    public void AdvanceDialogue()
+    public bool AdvanceDialogue()
     {
         if (!isChoosing && isDialogue)
         {
-            PrintDialogue();
+            if (inputStream.Peek().Contains("[LOADSCENE=") || inputStream.Peek().Contains("EndQueue"))
+            {
+                PrintDialogue();
+                return true;
+            }
+            else
+            {
+                Debug.Log("Printing as per normal");
+                PrintDialogue();
+                return false;
+            }
+        }
+        else
+        {
+            Debug.Log("Not doing anything");
+            return true;
         }
     }
 
@@ -130,7 +145,7 @@ public class TMPro_DialogueManager : MonoBehaviour
                 inputStream.Dequeue();
                 resultLineAmt = int.Parse(inputStream.Dequeue().Substring(1, 1));
                 BodyText.text = inputStream.Dequeue();
-                resultLineAmt -= 1;
+                resultLineAmt = 0;
             }
             else
             {
@@ -144,6 +159,7 @@ public class TMPro_DialogueManager : MonoBehaviour
         else if (resultLineAmt > 0)
         {
             inputStream.Dequeue();
+            PrintDialogue();
         }
         else
         {
@@ -281,10 +297,7 @@ public class TMPro_DialogueManager : MonoBehaviour
         if (isDialogue)
         {
             Debug.Log("Ending Dialogue");
-            if (FindObjectOfType<IntroductionDialogue>())
-            {
-                Destroy(FindObjectOfType<IntroductionDialogue>().gameObject);
-            }
+            inputStream.Clear();
             BodyText.text = "";
             NameText.text = "";
             inputStream.Clear();

@@ -39,6 +39,7 @@ public class OfficeManager : MonoBehaviour
         for (int x = objectsToColor; x > 0; x--)
         {
             int randomPick = Random.Range(0, colorableObjects.Count - 1);
+            Debug.Log(colorableObjects[randomPick] + "===" + randomPick);
 
             if (colorableObjects[randomPick] != null)
             {
