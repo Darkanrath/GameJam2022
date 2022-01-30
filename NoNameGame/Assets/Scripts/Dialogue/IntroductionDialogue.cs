@@ -10,7 +10,7 @@ public class IntroductionDialogue : MonoBehaviour
 
     private int fileToRun = 0;
 
-    private float waitTime = 0.5f;
+    private float waitTime = 1f;
     private float nextTime = 0f;
 
     private bool dialogueTriggered = false;

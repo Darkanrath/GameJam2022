@@ -6548,7 +6548,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7571433322085922398, guid: a27798ec12d73994995827181cdac296, type: 3}
       propertyPath: m_TagString
-      value: ColorChange
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 7571433322085922398, guid: a27798ec12d73994995827181cdac296, type: 3}
       propertyPath: m_StaticEditorFlags

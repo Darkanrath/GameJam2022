@@ -26,7 +26,7 @@ public class TMPro_DialogueTrigger : MonoBehaviour
 
     private Queue<string> dialogue = new Queue<string>();
 
-    private float waitTime = 0.5f;
+    private float waitTime = 1f;
     private float nextTime = 0f;
 
     private bool dialogueTriggered = false;
