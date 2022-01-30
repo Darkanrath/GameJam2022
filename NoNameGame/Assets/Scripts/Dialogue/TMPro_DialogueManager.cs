@@ -96,7 +96,11 @@ public class TMPro_DialogueManager : MonoBehaviour
 
     private void PrintDialogue()
     {
-        if (inputStream.Peek().Contains("EndQueue"))
+        if (inputStream.Peek().Contains("[LOADSCENE="))
+        {
+            ShouldLoadScene();
+        }
+        else if (inputStream.Peek().Contains("EndQueue"))
         {
             inputStream.Dequeue();
             EndDialogue();
@@ -178,6 +182,7 @@ public class TMPro_DialogueManager : MonoBehaviour
                 }
             }
         }
+        Debug.Log("Finished printing choices");
     }
 
     private bool CheckChoice()
@@ -222,6 +227,25 @@ public class TMPro_DialogueManager : MonoBehaviour
         {
             Debug.Log("No requirements");
             return true;
+        }
+    }
+
+    private void ShouldLoadScene()
+    {
+        string sceneIndex = inputStream.Dequeue().Substring(name.IndexOf('=') + 1, name.IndexOf(']') - (name.IndexOf('=') + 1));
+        if (inputStream.Peek().Contains("[*"))
+        {
+            string requirement = inputStream.Dequeue().Substring(2, 1);
+            if (requirement == choiceMade)
+            {
+                EndDialogue();
+                FindObjectOfType<SceneLoader>().ChangeScene(int.Parse(sceneIndex));
+            }
+        }
+        else
+        {
+            EndDialogue();
+            FindObjectOfType<SceneLoader>().ChangeScene(int.Parse(sceneIndex));
         }
     }
 
