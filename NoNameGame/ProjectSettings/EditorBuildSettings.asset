@@ -1,0 +1,14 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/DullOffice.unity
+    guid: 0f32ed9ad51aed346b5421fc72b880d6
+  - enabled: 1
+    path: Assets/Scenes/Lobby.unity
+    guid: f522584625088504abb6550c73585b42
+  m_configObjects: {}
