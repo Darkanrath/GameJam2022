@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: e2f1fe8e45201ff448922094d6f8a301
+  - enabled: 1
     path: Assets/Scenes/DullOffice.unity
     guid: 0f32ed9ad51aed346b5421fc72b880d6
   - enabled: 1
