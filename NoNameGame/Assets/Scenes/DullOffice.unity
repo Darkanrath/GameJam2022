@@ -178,6 +178,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Red Book Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 909916001561346397, guid: 4e8f36274d7d3f54c8ec99872af75246, type: 3}
+      propertyPath: m_TagString
+      value: ColorChange
+      objectReference: {fileID: 0}
     - target: {fileID: 1702457108645912712, guid: 4e8f36274d7d3f54c8ec99872af75246, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -199,6 +203,10 @@ PrefabInstance:
     - target: {fileID: 3631267956855353700, guid: 1b96d5f6d3c9d7d4c94d48f487151965, type: 3}
       propertyPath: m_Name
       value: DeskFrame Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 3631267956855353700, guid: 1b96d5f6d3c9d7d4c94d48f487151965, type: 3}
+      propertyPath: m_TagString
+      value: ColorChange
       objectReference: {fileID: 0}
     - target: {fileID: 3631267956855353700, guid: 1b96d5f6d3c9d7d4c94d48f487151965, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -478,7 +486,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   officeHolder: {fileID: 582912227}
-  objectsToColor: 1
+  objectsToColor: 5
 --- !u!4 &168761915
 Transform:
   m_ObjectHideFlags: 0
@@ -715,6 +723,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 180
       objectReference: {fileID: 0}
+    - target: {fileID: 4832139550852314259, guid: 90480a6b5bbc90c4fa98c2b9ee61b493, type: 3}
+      propertyPath: m_TagString
+      value: ColorChange
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 90480a6b5bbc90c4fa98c2b9ee61b493, type: 3}
 --- !u!1 &252423214
@@ -901,7 +913,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 71831447685421721, guid: 86c6dcd8cc7fdd74ca78e60d0ba287e9, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -480.48877
+      value: -480.48895
       objectReference: {fileID: 0}
     - target: {fileID: 4190812119631574045, guid: 86c6dcd8cc7fdd74ca78e60d0ba287e9, type: 3}
       propertyPath: m_AnchorMax.x
@@ -1573,6 +1585,10 @@ PrefabInstance:
       value: OfficeSofa Variant (2)
       objectReference: {fileID: 0}
     - target: {fileID: 5070487961174263345, guid: a9333933cb715444ea333e898372fb32, type: 3}
+      propertyPath: m_TagString
+      value: ColorChange
+      objectReference: {fileID: 0}
+    - target: {fileID: 5070487961174263345, guid: a9333933cb715444ea333e898372fb32, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -1701,6 +1717,10 @@ PrefabInstance:
     - target: {fileID: 909916001561346397, guid: 4e8f36274d7d3f54c8ec99872af75246, type: 3}
       propertyPath: m_Name
       value: Red Book Variant (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 909916001561346397, guid: 4e8f36274d7d3f54c8ec99872af75246, type: 3}
+      propertyPath: m_TagString
+      value: ColorChange
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4e8f36274d7d3f54c8ec99872af75246, type: 3}
@@ -1901,6 +1921,10 @@ PrefabInstance:
     - target: {fileID: 8447560099574267897, guid: 2896195768d977b47bd876e746507257, type: 3}
       propertyPath: m_Name
       value: Pen Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 8447560099574267897, guid: 2896195768d977b47bd876e746507257, type: 3}
+      propertyPath: m_TagString
+      value: ColorChange
       objectReference: {fileID: 0}
     - target: {fileID: 8447560099574267897, guid: 2896195768d977b47bd876e746507257, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -2385,6 +2409,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DiplomaFrame Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 3441175891992224648, guid: 9eda0677db32c414183f74e3e92367b5, type: 3}
+      propertyPath: m_TagString
+      value: ColorChange
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9eda0677db32c414183f74e3e92367b5, type: 3}
 --- !u!4 &1296074382 stripped
@@ -2580,6 +2608,10 @@ PrefabInstance:
       value: OfficeSofa Variant
       objectReference: {fileID: 0}
     - target: {fileID: 5070487961174263345, guid: a9333933cb715444ea333e898372fb32, type: 3}
+      propertyPath: m_TagString
+      value: ColorChange
+      objectReference: {fileID: 0}
+    - target: {fileID: 5070487961174263345, guid: a9333933cb715444ea333e898372fb32, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -2700,6 +2732,10 @@ PrefabInstance:
     - target: {fileID: 2995621680824896428, guid: 345c60939b3a9fd4597abc5264eaf2d0, type: 3}
       propertyPath: m_Name
       value: Painting1 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 2995621680824896428, guid: 345c60939b3a9fd4597abc5264eaf2d0, type: 3}
+      propertyPath: m_TagString
+      value: ColorChange
       objectReference: {fileID: 0}
     - target: {fileID: 2995621680824896428, guid: 345c60939b3a9fd4597abc5264eaf2d0, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -3963,6 +3999,10 @@ PrefabInstance:
       value: LDesk Variant
       objectReference: {fileID: 0}
     - target: {fileID: 3539424906938484427, guid: f6b5b6c1db58c9943b3c12d59aac476e, type: 3}
+      propertyPath: m_TagString
+      value: ColorChange
+      objectReference: {fileID: 0}
+    - target: {fileID: 3539424906938484427, guid: f6b5b6c1db58c9943b3c12d59aac476e, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -4110,6 +4150,10 @@ PrefabInstance:
       value: OfficeSofa Variant (1)
       objectReference: {fileID: 0}
     - target: {fileID: 5070487961174263345, guid: a9333933cb715444ea333e898372fb32, type: 3}
+      propertyPath: m_TagString
+      value: ColorChange
+      objectReference: {fileID: 0}
+    - target: {fileID: 5070487961174263345, guid: a9333933cb715444ea333e898372fb32, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -4181,6 +4225,10 @@ PrefabInstance:
     - target: {fileID: 387302228226600327, guid: 47e1b5e2fc6ff4747bd86a53cdbea5ce, type: 3}
       propertyPath: m_Name
       value: Stapler Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 387302228226600327, guid: 47e1b5e2fc6ff4747bd86a53cdbea5ce, type: 3}
+      propertyPath: m_TagString
+      value: ColorChange
       objectReference: {fileID: 0}
     - target: {fileID: 1014481993617487677, guid: 47e1b5e2fc6ff4747bd86a53cdbea5ce, type: 3}
       propertyPath: m_RootOrder
@@ -4425,6 +4473,10 @@ PrefabInstance:
     - target: {fileID: 7356322434310727301, guid: 143c3defdb2f4db4b9d4d6fe08688757, type: 3}
       propertyPath: m_LocalPosition.z
       value: -0.044
+      objectReference: {fileID: 0}
+    - target: {fileID: 7880517508508400703, guid: 143c3defdb2f4db4b9d4d6fe08688757, type: 3}
+      propertyPath: m_TagString
+      value: ColorChange
       objectReference: {fileID: 0}
     - target: {fileID: 7880517508508400703, guid: 143c3defdb2f4db4b9d4d6fe08688757, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -4826,6 +4878,10 @@ PrefabInstance:
       value: Iphone Variant
       objectReference: {fileID: 0}
     - target: {fileID: 4453840507469973859, guid: 73d8908c57f20344ab4e6da90115c145, type: 3}
+      propertyPath: m_TagString
+      value: ColorChange
+      objectReference: {fileID: 0}
+    - target: {fileID: 4453840507469973859, guid: 73d8908c57f20344ab4e6da90115c145, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -5066,6 +5122,10 @@ PrefabInstance:
     - target: {fileID: 7571433322085922398, guid: a27798ec12d73994995827181cdac296, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 7784601920956296796, guid: a27798ec12d73994995827181cdac296, type: 3}
+      propertyPath: m_TagString
+      value: ColorChange
       objectReference: {fileID: 0}
     - target: {fileID: 7784601920956296796, guid: a27798ec12d73994995827181cdac296, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -5555,28 +5615,56 @@ PrefabInstance:
       value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 927460694800435214, guid: a5bb368129381d646a80b083c7ca1bea, type: 3}
+      propertyPath: m_TagString
+      value: ColorChange
+      objectReference: {fileID: 0}
+    - target: {fileID: 927460694800435214, guid: a5bb368129381d646a80b083c7ca1bea, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 927460694874164635, guid: a5bb368129381d646a80b083c7ca1bea, type: 3}
+      propertyPath: m_TagString
+      value: ColorChange
       objectReference: {fileID: 0}
     - target: {fileID: 927460694874164635, guid: a5bb368129381d646a80b083c7ca1bea, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 927460695373281306, guid: a5bb368129381d646a80b083c7ca1bea, type: 3}
+      propertyPath: m_TagString
+      value: ColorChange
+      objectReference: {fileID: 0}
+    - target: {fileID: 927460695373281306, guid: a5bb368129381d646a80b083c7ca1bea, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 927460695902763387, guid: a5bb368129381d646a80b083c7ca1bea, type: 3}
+      propertyPath: m_TagString
+      value: ColorChange
       objectReference: {fileID: 0}
     - target: {fileID: 927460695902763387, guid: a5bb368129381d646a80b083c7ca1bea, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 927460696203978624, guid: a5bb368129381d646a80b083c7ca1bea, type: 3}
+      propertyPath: m_TagString
+      value: ColorChange
+      objectReference: {fileID: 0}
+    - target: {fileID: 927460696203978624, guid: a5bb368129381d646a80b083c7ca1bea, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 927460696557799334, guid: a5bb368129381d646a80b083c7ca1bea, type: 3}
+      propertyPath: m_TagString
+      value: ColorChange
+      objectReference: {fileID: 0}
+    - target: {fileID: 927460696557799334, guid: a5bb368129381d646a80b083c7ca1bea, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 927460696703207074, guid: a5bb368129381d646a80b083c7ca1bea, type: 3}
+      propertyPath: m_TagString
+      value: ColorChange
       objectReference: {fileID: 0}
     - target: {fileID: 927460696703207074, guid: a5bb368129381d646a80b083c7ca1bea, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -6268,7 +6356,7 @@ GameObject:
   - component: {fileID: 8745759892930257455}
   m_Layer: 0
   m_Name: pCube1
-  m_TagString: Untagged
+  m_TagString: ColorChange
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
