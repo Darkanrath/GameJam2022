@@ -1563,7 +1563,7 @@ MonoBehaviour:
   dialogueTextFile: []
   interactionText: 
   objectRequirement: 5
-  colorAnObject: 0
+  colorAnObject: 1
   interactAmt: 0
   moreDialogue: 1
 --- !u!1001 &533833842
@@ -2388,7 +2388,7 @@ MonoBehaviour:
   - {fileID: 0}
   interactionText: 
   objectRequirement: 4
-  colorAnObject: 0
+  colorAnObject: 1
   interactAmt: 0
   moreDialogue: 1
 --- !u!4 &905818751 stripped
@@ -2785,7 +2785,7 @@ MonoBehaviour:
   - {fileID: 4900000, guid: dc75b883349d4f74dad36a4945d6a014, type: 3}
   interactionText: '''E'' to Watch the News'
   objectRequirement: 2
-  colorAnObject: 0
+  colorAnObject: 1
   interactAmt: 0
   moreDialogue: 1
 --- !u!65 &1034222889
@@ -3716,7 +3716,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueTextFile:
   - {fileID: 4900000, guid: ba0b306cbcfffa547a6e6f80f2abbc5f, type: 3}
-  - {fileID: 0}
+  - {fileID: 4900000, guid: 6198d0a3fd943d044913ef156f4c9313, type: 3}
   - {fileID: 0}
 --- !u!4 &1416775846
 Transform:
@@ -5822,7 +5822,7 @@ MonoBehaviour:
   dialogueTextFile: []
   interactionText: 
   objectRequirement: 3
-  colorAnObject: 0
+  colorAnObject: 1
   interactAmt: 0
   moreDialogue: 1
 --- !u!1 &1802334210
