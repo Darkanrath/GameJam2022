@@ -10,6 +10,7 @@ TagManager:
   - ShowOnPause
   - ShowOnSettings
   - SwitchOnPause
+  - ExitUI
   layers:
   - Default
   - TransparentFX
