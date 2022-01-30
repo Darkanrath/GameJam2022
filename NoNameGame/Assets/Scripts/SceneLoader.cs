@@ -101,6 +101,7 @@ public class SceneLoader : MonoBehaviour
             {
                 player = GameObject.FindGameObjectWithTag("Player");
                 officeLoadedOnce = true;
+                currentSceneIndex = -1;
             }
         }
         //Debug.Log(player.transform.position);
@@ -118,7 +119,11 @@ public class SceneLoader : MonoBehaviour
 
         yield return new WaitForSeconds(1);
         SceneManager.SetActiveScene(SceneManager.GetSceneByBuildIndex(index));
-        SceneManager.UnloadSceneAsync(SceneManager.GetSceneByBuildIndex(currentSceneIndex));
+        if (currentSceneIndex >= 0)
+        {
+            SceneManager.UnloadSceneAsync(SceneManager.GetSceneByBuildIndex(currentSceneIndex));
+            currentSceneIndex = -1;
+        }
         FindObjectOfType<OfficeManager>().ShowOffice();
         FindObjectOfType<OfficeManager>().ChangeOffice();
         player = GameObject.FindGameObjectWithTag("Player");

@@ -35,7 +35,9 @@ Don't want to be making sporadic decisions so soon.
 
 Shit, it is late. I almost miss my meeting!
 
-[LOADSCENE=4][*2]
+[LOADSCENE=3][*2]
+
+[LOADSCENE=1][*1]
 
 EndQueue
 

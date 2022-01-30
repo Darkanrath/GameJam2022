@@ -90,6 +90,7 @@ public class TMPro_DialogueManager : MonoBehaviour
 
     public bool AdvanceDialogue()
     {
+        Debug.Log(isChoosing);
         if (!isChoosing && isDialogue)
         {
             if (inputStream.Peek().Contains("[LOADSCENE=") || inputStream.Peek().Contains("EndQueue"))
@@ -99,14 +100,14 @@ public class TMPro_DialogueManager : MonoBehaviour
             }
             else
             {
-                Debug.Log("Printing as per normal");
+                //Debug.Log("Printing as per normal");
                 PrintDialogue();
                 return false;
             }
         }
         else
         {
-            Debug.Log("Not doing anything");
+            //Debug.Log("Not doing anything");
             return true;
         }
     }
@@ -208,6 +209,7 @@ public class TMPro_DialogueManager : MonoBehaviour
                 }
             }
         }
+        Debug.Log(isChoosing);
         Debug.Log("Finished printing choices");
     }
 
@@ -297,6 +299,7 @@ public class TMPro_DialogueManager : MonoBehaviour
         if (isDialogue)
         {
             Debug.Log("Ending Dialogue");
+            resultLineAmt = 0;
             inputStream.Clear();
             BodyText.text = "";
             NameText.text = "";
