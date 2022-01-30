@@ -40,4 +40,6 @@ I hope you forgive me, mom; I can't let them evict us... I hope you will be ok.
 
 Just need to do a couple more deliveries... Please be ok.
 
+[LOADSCENE=1]
+
 EndQueue
