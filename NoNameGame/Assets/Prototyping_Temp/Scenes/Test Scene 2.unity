@@ -262,6 +262,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73bf147b06d8a814c99cbf13dde698c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  transitionImage: {fileID: 0}
+  animTransition: {fileID: 0}
 --- !u!4 &238498034
 Transform:
   m_ObjectHideFlags: 0
@@ -427,8 +429,8 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 1.4567094
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Radius: 2.0382464
+  m_Center: {x: 0.581537, y: 0, z: 0}
 --- !u!23 &424437710
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -487,6 +489,36 @@ Transform:
   m_GameObject: {fileID: 424437707}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -20.699215, y: 1.28, z: -88.22862}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &554729728
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 4190812120614861756, guid: d6a6ac1550f115349b5383c78a9ac383, type: 3}
+  m_PrefabInstance: {fileID: 236046611}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 554729729}
+  m_Layer: 0
+  m_Name: 'DialogueUICanvas (Missing Prefab with guid: d6a6ac1550f115349b5383c78a9ac383)'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &554729729
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 4190812120614861744, guid: d6a6ac1550f115349b5383c78a9ac383, type: 3}
+  m_PrefabInstance: {fileID: 236046611}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 554729728}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
