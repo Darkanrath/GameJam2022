@@ -1,0 +1,17 @@
+[NAME=CEO]-Opens envelope and finds a postcard inside-
+
+[NAME=Postcard]Yooo BRO!
+
+I'll be moving down there next week!
+
+I hope you can help me out with a job or something ;)
+
+Y'know, good ol' times.
+
+From Frat Bro xoxoxo
+
+PEACE!
+
+p.s. remember that time in Vegas? Me neither. ;);););)
+
+EndQueue

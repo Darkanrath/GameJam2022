@@ -4375,7 +4375,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueTextFile:
   - {fileID: 4900000, guid: 5e2c1383c337aa84f91bbb5ddb8960d2, type: 3}
-  interactionText: 
+  interactionText: '''E'' to Talk'
   objectRequirement: 0
   colorAnObject: 0
   interactAmt: 0
@@ -5733,6 +5733,10 @@ PrefabInstance:
     - target: {fileID: 1929864619681255566, guid: f99b611debc2ce742a30a924ab2a1cc6, type: 3}
       propertyPath: m_Name
       value: AltPlayer
+      objectReference: {fileID: 0}
+    - target: {fileID: 7764468350047307329, guid: f99b611debc2ce742a30a924ab2a1cc6, type: 3}
+      propertyPath: m_Volume
+      value: 0.064
       objectReference: {fileID: 0}
     - target: {fileID: 7764468350047307329, guid: f99b611debc2ce742a30a924ab2a1cc6, type: 3}
       propertyPath: m_audioClip
@@ -8896,7 +8900,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueTextFile:
   - {fileID: 4900000, guid: 23ae5654d98753f46993ac9665a891ab, type: 3}
-  interactionText: 
+  interactionText: '''E'' '
   objectRequirement: 0
   colorAnObject: 0
   interactAmt: 0

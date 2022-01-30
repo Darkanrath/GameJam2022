@@ -1100,8 +1100,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueTextFile:
-  - {fileID: 0}
-  interactionText: 
+  - {fileID: 4900000, guid: b11e9c0ee3197c04995cc5fd1573bc0e, type: 3}
+  interactionText: '''E'' to Drink Water'
   objectRequirement: 0
   colorAnObject: 0
   interactAmt: 0
@@ -1560,8 +1560,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 789c0c9ab467f854885f208075eefc97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueTextFile: []
-  interactionText: 
+  dialogueTextFile:
+  - {fileID: 4900000, guid: 5e463eb25c6df4040a46fbbaffa13562, type: 3}
+  interactionText: '''E'' to Listen Voicemail'
   objectRequirement: 5
   colorAnObject: 1
   interactAmt: 0
@@ -1728,8 +1729,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueTextFile:
-  - {fileID: 0}
-  interactionText: 
+  - {fileID: 4900000, guid: 0e006e6f90b720d4ba9223629ccb66a2, type: 3}
+  interactionText: '''E'' to Check the Painting'
   objectRequirement: 0
   colorAnObject: 0
   interactAmt: 0
@@ -2067,8 +2068,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 789c0c9ab467f854885f208075eefc97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueTextFile: []
-  interactionText: 
+  dialogueTextFile:
+  - {fileID: 4900000, guid: e447c9551b7627f42b254b374b80cdbc, type: 3}
+  interactionText: '''E'' to Check Couch'
   objectRequirement: 0
   colorAnObject: 0
   interactAmt: 0
@@ -2131,8 +2133,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueTextFile:
-  - {fileID: 0}
-  interactionText: 
+  - {fileID: 4900000, guid: 49c0bc834cd01da409af71d146b13b2d, type: 3}
+  interactionText: '''E'' Check Emails'
   objectRequirement: 0
   colorAnObject: 0
   interactAmt: 0
@@ -2391,8 +2393,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueTextFile:
-  - {fileID: 0}
-  interactionText: 
+  - {fileID: 4900000, guid: e03b41b8648a8414fb49eb5da4babbbd, type: 3}
+  interactionText: '''E'' to Review'
   objectRequirement: 4
   colorAnObject: 1
   interactAmt: 0
@@ -3723,7 +3725,7 @@ MonoBehaviour:
   dialogueTextFile:
   - {fileID: 4900000, guid: ba0b306cbcfffa547a6e6f80f2abbc5f, type: 3}
   - {fileID: 4900000, guid: 6198d0a3fd943d044913ef156f4c9313, type: 3}
-  - {fileID: 0}
+  - {fileID: 4900000, guid: a860e40b38fbf7e478662d2c2c54bb14, type: 3}
 --- !u!4 &1416775846
 Transform:
   m_ObjectHideFlags: 0
@@ -5825,8 +5827,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 789c0c9ab467f854885f208075eefc97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueTextFile: []
-  interactionText: 
+  dialogueTextFile:
+  - {fileID: 4900000, guid: 08fb3cfe64530104080249e6a96c5499, type: 3}
+  interactionText: '''E'' to Read Mail'
   objectRequirement: 3
   colorAnObject: 1
   interactAmt: 0

@@ -1,0 +1,34 @@
+[NAME=CEO]Ok, let's see what I have here...
+
+Oh, an email from the president!
+
+[NAME= ]-Opens email-
+
+[NAME=President's Email]Hello Mr. CEO. I hope you are ok and enjoying being part of THECompany family.
+It seems that profits are down, as you probably already know. 
+I would like for you to make your first big and impactful decision about the company. 
+Let me know what we can do to increase our profits, and run it through me. 
+I am sure you will lookout for the company. 
+
+Best Regards,
+President of THECompany. 
+
+[NAME=CEO]
+
+**Choices**
+[CHOICE=1]
+[CHOICE=2][*1]
+
+[CHOICE=3]
+
+[CHOICE=4]
+
+[1][1]
+
+
+[2][2]
+
+
+[LOADSCENE=2]
+
+EndQueue
