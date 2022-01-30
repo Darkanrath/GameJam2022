@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -10,10 +9,13 @@ public class PauseMenu : MonoBehaviour
 
 {
 
-    Scene currentScene;
-    GameObject[] pauseMenu;
-    GameObject[] settingsMenu;
-    GameObject[] playerUI;
+    private Scene currentScene;
+    private GameObject[] pauseMenu;
+    private GameObject[] settingsMenu;
+    private GameObject[] switchOnPause;
+
+    private bool paused;
+    private bool settings;
 
     // Start is called before the first frame update
     void Start()
@@ -21,7 +23,6 @@ public class PauseMenu : MonoBehaviour
         Time.timeScale = 1;
         pauseMenu = GameObject.FindGameObjectsWithTag("ShowOnPause");
         settingsMenu = GameObject.FindGameObjectsWithTag("ShowOnSettings");
-        playerUI = GameObject.FindGameObjectsWithTag("PlayerUI");
         HidePaused();
         HideSettings();
     }
@@ -73,14 +74,22 @@ public class PauseMenu : MonoBehaviour
     // Shows all objects with ShowOnPause tag
     public void ShowPaused()
     {
+        if (!paused)
+        {
+            paused = true;
+            switchOnPause = GameObject.FindGameObjectsWithTag("SwitchOnPause");
+        }
+
         foreach (GameObject g in pauseMenu)
         {
             g.SetActive(true);
         }
-        foreach (GameObject g in playerUI)
+
+        foreach (GameObject g in switchOnPause)
         {
             g.SetActive(false);
         }
+
         Cursor.lockState = CursorLockMode.Confined;
         Cursor.visible = true;
     }
@@ -92,24 +101,39 @@ public class PauseMenu : MonoBehaviour
         {
             g.SetActive(false);
         }
-        foreach (GameObject g in playerUI)
+
+        if (paused && !settings)
         {
-            g.SetActive(true);
+            foreach (GameObject g in switchOnPause)
+            {
+                g.SetActive(true);
+            }
+            Array.Clear(switchOnPause, 0, switchOnPause.Length);
         }
+
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
+
+        if (settings)
+        {
+            Cursor.lockState = CursorLockMode.Confined;
+            Cursor.visible = true;
+            settings = false;
+        }
+        else
+        {
+            paused = false;
+        }
     }
 
     // Shows all objects with ShowOnSettings tag
     public void ShowSettings()
     {
+        settings = true;
+
         foreach (GameObject g in settingsMenu)
         {
             g.SetActive(true);
-        }
-        foreach (GameObject g in playerUI)
-        {
-            g.SetActive(false);
         }
         Cursor.lockState = CursorLockMode.Confined;
         Cursor.visible = true;

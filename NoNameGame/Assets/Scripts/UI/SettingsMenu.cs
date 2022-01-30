@@ -1,9 +1,8 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.UI;
-using System.Linq;
 
 public class SettingsMenu : MonoBehaviour
 
@@ -24,7 +23,7 @@ public class SettingsMenu : MonoBehaviour
 
     private void Start()
     {
-        mainMixer.GetFloat("MasterVolume", out float value);
+        mainMixer.GetFloat("Master", out float value);
         value = value / 20;
         volumeSlider.value = (Mathf.Pow(10f, value));
         fullscreen.isOn = Screen.fullScreen;
@@ -61,15 +60,15 @@ public class SettingsMenu : MonoBehaviour
 
     public void SetVolume(float volume)
     {
-        mainMixer.SetFloat("MasterVolume", Mathf.Log10(volume) * 20);
+        mainMixer.SetFloat("Master", Mathf.Log10(volume) * 20);
     }
 
-    public void SetQuality (int qualityIndex)
+    public void SetQuality(int qualityIndex)
     {
         QualitySettings.SetQualityLevel(qualityIndex);
     }
 
-    public void SetFullscreen (bool isFullscreen)
+    public void SetFullscreen(bool isFullscreen)
     {
         Screen.fullScreen = isFullscreen;
     }
