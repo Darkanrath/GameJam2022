@@ -7,13 +7,13 @@ public class SceneTransition : MonoBehaviour
 {
     public int sceneIndex;
 
-    private InteractManager intManagerRef;
+    private TMPro_InteractManager intManagerRef;
 
     private bool transitioning = false;
 
     private void Awake()
     {
-        intManagerRef = FindObjectOfType<InteractManager>();
+        intManagerRef = FindObjectOfType<TMPro_InteractManager>();
     }
 
     private void OnTriggerEnter(Collider other)
