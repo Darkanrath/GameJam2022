@@ -50,13 +50,7 @@ public class SceneLoader : MonoBehaviour
         if (index == officeIndex && officeLoadedOnce)
         {
             Debug.Log("Going back to Office");
-            SceneManager.SetActiveScene(SceneManager.GetSceneByBuildIndex(index));
-            SceneManager.UnloadSceneAsync(SceneManager.GetSceneByBuildIndex(currentSceneIndex));
-            FindObjectOfType<OfficeManager>().ShowOffice();
-            FindObjectOfType<OfficeManager>().ChangeOffice();
-            player = GameObject.FindGameObjectWithTag("Player");
-            FindObjectOfType<OfficeManager>().ChangeAnObject();
-            EnablePlayer();
+            StartCoroutine(GoBackToOffice(index));
         }
         else
         {
@@ -71,7 +65,6 @@ public class SceneLoader : MonoBehaviour
                 currentSceneIndex = index;
                 FindObjectOfType<OfficeManager>().HideOffice();
                 StartCoroutine(LoadSceneAsync(index));
-                FindObjectOfType<ResultsCarrier>().ChangeSceneSpecifics();
             }
         }
     }
@@ -83,6 +76,7 @@ public class SceneLoader : MonoBehaviour
         {
             yield return null;
         }
+        FindObjectOfType<ResultsCarrier>().ChangeSceneSpecifics();
         //Debug.Log(player.transform.position);
         if (!officeLoadedOnce)
         {
@@ -96,5 +90,20 @@ public class SceneLoader : MonoBehaviour
             }
         }
         //Debug.Log(player.transform.position);
+    }
+
+    IEnumerator GoBackToOffice(int index)
+    {
+
+        yield return new WaitForSeconds(1);
+        SceneManager.SetActiveScene(SceneManager.GetSceneByBuildIndex(index));
+        SceneManager.UnloadSceneAsync(SceneManager.GetSceneByBuildIndex(currentSceneIndex));
+        FindObjectOfType<OfficeManager>().ShowOffice();
+        FindObjectOfType<OfficeManager>().ChangeOffice();
+        player = GameObject.FindGameObjectWithTag("Player");
+        FindObjectOfType<OfficeManager>().ChangeAnObject();
+
+        yield return new WaitForSeconds(1);
+        EnablePlayer();
     }
 }
