@@ -40,4 +40,6 @@ Omg....
 
 Thank you... Thank you so much.
 
+[LOADSCENE=1]
+
 EndQueue

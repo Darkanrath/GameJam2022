@@ -17,13 +17,12 @@ public class IntroductionDialogue : MonoBehaviour
 
     private void Start()
     {
-        TriggerDialogue();
-        dialogueTriggered = true;
+        StartCoroutine(DelayedTrigger());
     }
 
     public void ReRun()
     {
-        TriggerDialogue();
+        StartCoroutine(DelayedTrigger());
     }
 
     private void TriggerDialogue()
@@ -68,8 +67,20 @@ public class IntroductionDialogue : MonoBehaviour
         //Debug.Log(other.name);
         if (Input.GetKey(KeyCode.Space) && nextTime < Time.timeSinceLevelLoad && dialogueTriggered == true)
         {
+            Debug.Log("Advancing Dialogue");
             nextTime = Time.timeSinceLevelLoad + waitTime;
-            FindObjectOfType<TMPro_DialogueManager>().AdvanceDialogue();
+            if (FindObjectOfType<TMPro_DialogueManager>().AdvanceDialogue())
+            {
+                dialogueTriggered = false;
+                Debug.Log("Introduction Ended");
+            }
         }
+    }
+
+    IEnumerator DelayedTrigger()
+    {
+        yield return new WaitForSeconds(1);
+        TriggerDialogue();
+        dialogueTriggered = true;
     }
 }
