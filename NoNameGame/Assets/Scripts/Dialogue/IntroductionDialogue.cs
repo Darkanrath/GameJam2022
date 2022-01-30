@@ -29,7 +29,7 @@ public class IntroductionDialogue : MonoBehaviour
     private void TriggerDialogue()
     {
         ReadTextFile();
-        FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
+        FindObjectOfType<TMPro_DialogueManager>().StartDialogue(dialogue);
     }
 
     private void ReadTextFile()
@@ -63,13 +63,13 @@ public class IntroductionDialogue : MonoBehaviour
         }
     }
 
-    private void OnTriggerStay(Collider other)
+    private void Update()
     {
         //Debug.Log(other.name);
-        if (other.gameObject.tag == "Player" && Input.GetKey(KeyCode.Space) && nextTime < Time.timeSinceLevelLoad && dialogueTriggered == true)
+        if (Input.GetKey(KeyCode.Space) && nextTime < Time.timeSinceLevelLoad && dialogueTriggered == true)
         {
             nextTime = Time.timeSinceLevelLoad + waitTime;
-            FindObjectOfType<DialogueManager>().AdvanceDialogue();
+            FindObjectOfType<TMPro_DialogueManager>().AdvanceDialogue();
         }
     }
 }

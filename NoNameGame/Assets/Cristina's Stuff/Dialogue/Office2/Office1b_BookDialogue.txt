@@ -1,0 +1,15 @@
+[NAME=Book]“Know thyself, 
+
+know thy enemy, 
+
+you need not fear a hundred battles” 
+
+by Sun Tzu
+
+[NAME=CEO]...
+
+No idea what this means.
+
+Why do I have this here?
+
+EndQueue

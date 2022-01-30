@@ -16,8 +16,9 @@ public class SceneLoader : MonoBehaviour
 
     private int officeIndex = 1;
     private bool officeLoadedOnce = false;
-
     private bool isLoading = false;
+
+    public Animator animTransition;
 
     private void Start()
     {
@@ -49,6 +50,8 @@ public class SceneLoader : MonoBehaviour
     {
         if (isLoading == false)
         {
+            isLoading = true;
+
             if (GameObject.FindGameObjectWithTag("Player"))
             {
                 DisablePlayer();
@@ -79,6 +82,9 @@ public class SceneLoader : MonoBehaviour
 
     IEnumerator LoadSceneAsync(int index)
     {
+        animTransition.Play("crossfade_start");
+        yield return new WaitForSeconds(1.5f);
+
         AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(index, LoadSceneMode.Additive);
         while (!asyncLoad.isDone)
         {
@@ -98,10 +104,17 @@ public class SceneLoader : MonoBehaviour
             }
         }
         //Debug.Log(player.transform.position);
+
+        animTransition.Play("crossfade_end");
+        yield return new WaitForSeconds(1.5f);
+
+        isLoading = false;
     }
 
     IEnumerator GoBackToOffice(int index)
     {
+        animTransition.Play("crossfade_start");
+        yield return new WaitForSeconds(1.5f);
 
         yield return new WaitForSeconds(1);
         SceneManager.SetActiveScene(SceneManager.GetSceneByBuildIndex(index));
@@ -113,6 +126,12 @@ public class SceneLoader : MonoBehaviour
 
         yield return new WaitForSeconds(1);
         EnablePlayer();
+
+        animTransition.Play("crossfade_end");
+        yield return new WaitForSeconds(1.5f);
+
         FindObjectOfType<IntroductionDialogue>().ReRun();
+
+        isLoading = false;
     }
 }
