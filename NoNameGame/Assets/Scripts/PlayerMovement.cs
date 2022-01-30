@@ -64,11 +64,11 @@ public class PlayerMovement : MonoBehaviour
             isWalking = true;
             controller.Move(move * walkSpeed * Time.deltaTime);
 
-            //if (audioSource.isPlaying == false)
-            //{
-            //    audioSource.clip = walking;
-            //    audioSource.Play();
-            //}
+            if (audioSource.isPlaying == false)
+            {
+                audioSource.clip = walking;
+                audioSource.Play();
+            }
         }
         else if (move == Vector3.zero || isRunning == true)
         {
@@ -82,8 +82,8 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetKey(KeyCode.LeftShift) == true && move != Vector3.zero)
         {
-            isRunning = true;
-            controller.Move(move * runSpeed * Time.deltaTime);
+            //isRunning = true;
+            //controller.Move(move * runSpeed * Time.deltaTime);
 
             //if (audioSource.isPlaying == false || audioSource.clip != running)
             //{
@@ -95,10 +95,10 @@ public class PlayerMovement : MonoBehaviour
         else if (move == Vector3.zero || isWalking == false)
         {
             isRunning = false;
-            //if (audioSource.isPlaying == true && isWalking == false)
-            //{
-            //    audioSource.Pause();
-            //}
+            if (audioSource.isPlaying == true && isWalking == false)
+            {
+                audioSource.Pause();
+            }
         }
 
         //if (Input.GetButtonDown("Jump") && isGrounded)

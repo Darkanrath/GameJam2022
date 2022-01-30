@@ -13,6 +13,11 @@ public class ResultsCarrier : MonoBehaviour
 
     public void ChangeSceneSpecifics()
     {
-
+        if (GameObject.FindGameObjectWithTag("ChangeByResult"))
+        {
+            GameObject toChange = GameObject.FindGameObjectWithTag("ChangeByResult");
+            toChange.GetComponent<TMPro_DialogueTrigger>().interactAmt = choiceMade;
+            toChange.GetComponent<TMPro_DialogueTrigger>().moreDialogue = false;
+        }
     }
 }
