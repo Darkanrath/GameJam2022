@@ -900,11 +900,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 71831447685421721, guid: 86c6dcd8cc7fdd74ca78e60d0ba287e9, type: 3}
       propertyPath: m_AnchoredPosition.y
+<<<<<<< HEAD
       value: -480.48883
       objectReference: {fileID: 0}
     - target: {fileID: 449427758397670953, guid: 86c6dcd8cc7fdd74ca78e60d0ba287e9, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -1.2130127
+=======
+      value: -352.70142
+>>>>>>> parent of 4ddbb6b (Merge branch 'Lukas' into Cristina)
       objectReference: {fileID: 0}
     - target: {fileID: 1283468742267747706, guid: 86c6dcd8cc7fdd74ca78e60d0ba287e9, type: 3}
       propertyPath: m_colorMode
@@ -913,6 +917,7 @@ PrefabInstance:
     - target: {fileID: 1283468742267747706, guid: 86c6dcd8cc7fdd74ca78e60d0ba287e9, type: 3}
       propertyPath: m_enableVertexGradient
       value: 0
+<<<<<<< HEAD
       objectReference: {fileID: 0}
     - target: {fileID: 1483682579631750965, guid: 86c6dcd8cc7fdd74ca78e60d0ba287e9, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -921,6 +926,8 @@ PrefabInstance:
     - target: {fileID: 3021595842303730830, guid: 86c6dcd8cc7fdd74ca78e60d0ba287e9, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 0.75
+=======
+>>>>>>> parent of 4ddbb6b (Merge branch 'Lukas' into Cristina)
       objectReference: {fileID: 0}
     - target: {fileID: 4190812119631574045, guid: 86c6dcd8cc7fdd74ca78e60d0ba287e9, type: 3}
       propertyPath: m_AnchorMax.x
@@ -933,6 +940,7 @@ PrefabInstance:
     - target: {fileID: 4190812119631574045, guid: 86c6dcd8cc7fdd74ca78e60d0ba287e9, type: 3}
       propertyPath: m_AnchorMin.y
       value: 0
+<<<<<<< HEAD
       objectReference: {fileID: 0}
     - target: {fileID: 4190812119631574045, guid: 86c6dcd8cc7fdd74ca78e60d0ba287e9, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -941,6 +949,8 @@ PrefabInstance:
     - target: {fileID: 4190812119959765591, guid: 86c6dcd8cc7fdd74ca78e60d0ba287e9, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 0.49926758
+=======
+>>>>>>> parent of 4ddbb6b (Merge branch 'Lukas' into Cristina)
       objectReference: {fileID: 0}
     - target: {fileID: 4190812120081672042, guid: 86c6dcd8cc7fdd74ca78e60d0ba287e9, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -1034,10 +1044,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: TMPro_DialogueUICanvas
       objectReference: {fileID: 0}
+<<<<<<< HEAD
     - target: {fileID: 4190812120625840348, guid: 86c6dcd8cc7fdd74ca78e60d0ba287e9, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -0.5
       objectReference: {fileID: 0}
+=======
+>>>>>>> parent of 4ddbb6b (Merge branch 'Lukas' into Cristina)
     - target: {fileID: 4190812120667874798, guid: 86c6dcd8cc7fdd74ca78e60d0ba287e9, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 0
@@ -1642,6 +1655,7 @@ Transform:
   - {fileID: 1831535924}
   m_Father: {fileID: 582912228}
   m_RootOrder: 3
+<<<<<<< HEAD
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &739838523
 GameObject:
@@ -1678,6 +1692,49 @@ Transform:
   m_Father: {fileID: 582912228}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+=======
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &695219096 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 338347141363216667, guid: 86c6dcd8cc7fdd74ca78e60d0ba287e9, type: 3}
+  m_PrefabInstance: {fileID: 287097468}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &739838523
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 739838524}
+  - component: {fileID: 739838526}
+  - component: {fileID: 739838525}
+  m_Layer: 0
+  m_Name: Mail/PostcardInteractable
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &739838524
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 739838523}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -79.183, y: 16.2294, z: 69.176}
+  m_LocalScale: {x: 24.603878, y: 0.47239912, z: 14.865331}
+  m_Children:
+  - {fileID: 990436533}
+  - {fileID: 633529076}
+  - {fileID: 1760602253}
+  m_Father: {fileID: 582912228}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+>>>>>>> parent of 4ddbb6b (Merge branch 'Lukas' into Cristina)
 --- !u!65 &739838525
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3044,6 +3101,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73bf147b06d8a814c99cbf13dde698c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animTransition: {fileID: 695219096}
 --- !u!114 &1428440099
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3585,6 +3643,7 @@ Transform:
   - {fileID: 1307482132}
   m_Father: {fileID: 582912228}
   m_RootOrder: 2
+<<<<<<< HEAD
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1587533813
 GameObject:
@@ -3618,6 +3677,8 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1310534689}
   m_RootOrder: 0
+=======
+>>>>>>> parent of 4ddbb6b (Merge branch 'Lukas' into Cristina)
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1587533815
 BoxCollider:
