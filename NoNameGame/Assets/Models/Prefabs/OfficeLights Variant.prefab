@@ -53,7 +53,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: e4190df8e3b901e43b0d4ef24b38f6f6, type: 3}
       propertyPath: m_Name
-      value: OfficeLights
+      value: OfficeLights Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e4190df8e3b901e43b0d4ef24b38f6f6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e4190df8e3b901e43b0d4ef24b38f6f6, type: 3}

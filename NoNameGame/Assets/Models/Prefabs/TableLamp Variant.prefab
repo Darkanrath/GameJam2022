@@ -63,6 +63,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8513424388201257645, guid: 63e0024043f50cc4ca76c8fcb0e523da, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: -6067185528594298527, guid: 63e0024043f50cc4ca76c8fcb0e523da, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -73,11 +77,23 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: db49892d14a89b24aa69891b4aab1077, type: 2}
     - target: {fileID: 919132149155446097, guid: 63e0024043f50cc4ca76c8fcb0e523da, type: 3}
       propertyPath: m_Name
-      value: TableLamp
+      value: TableLamp Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 63e0024043f50cc4ca76c8fcb0e523da, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2866621852552652557, guid: 63e0024043f50cc4ca76c8fcb0e523da, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 3566390031902043909, guid: 63e0024043f50cc4ca76c8fcb0e523da, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 3e80b545142f651439565ce8f3f08a15, type: 2}
+    - target: {fileID: 3779745573541866595, guid: 63e0024043f50cc4ca76c8fcb0e523da, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 63e0024043f50cc4ca76c8fcb0e523da, type: 3}

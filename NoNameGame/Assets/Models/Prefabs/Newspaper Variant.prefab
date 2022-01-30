@@ -69,7 +69,11 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: f2c37f599ba89634995b4e4aa37872fc, type: 2}
     - target: {fileID: 919132149155446097, guid: 1f9aa73404f6fab42acb58303eb1c30e, type: 3}
       propertyPath: m_Name
-      value: Newspaper
+      value: Newspaper Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1f9aa73404f6fab42acb58303eb1c30e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1f9aa73404f6fab42acb58303eb1c30e, type: 3}

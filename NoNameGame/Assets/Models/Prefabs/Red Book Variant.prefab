@@ -69,7 +69,11 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: ac6be798cafbb644a8a261a2c5d0a0c0, type: 2}
     - target: {fileID: 919132149155446097, guid: fb027e1b99c9b1b42ad408917c3ed4bb, type: 3}
       propertyPath: m_Name
-      value: Red Book
+      value: Red Book Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fb027e1b99c9b1b42ad408917c3ed4bb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fb027e1b99c9b1b42ad408917c3ed4bb, type: 3}
@@ -91,3 +95,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.010836823, y: 0.01048567, z: 0.013733339}
   m_Center: {x: -0.00014999113, y: 0, z: 0}
+--- !u!114 &820727647328341662
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 909916001561346397}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da17be75cfe17c743a03087fec53edcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coloredTexture: {fileID: 2800000, guid: 9e1015274c2a9c74f9ecf6952f43221e, type: 3}
+  darkTexture: {fileID: 2800000, guid: 30b088e8658ba154995c5a47d9f46a98, type: 3}
+  normalMap: {fileID: 2800000, guid: f7d3409a5148a6541b45a63cd4756ed0, type: 3}
