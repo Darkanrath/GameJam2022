@@ -54,7 +54,7 @@ public class SceneLoader : MonoBehaviour
 
             if (GameObject.FindGameObjectWithTag("Player"))
             {
-                DisablePlayer();
+                //DisablePlayer();
             }
 
             if (index == officeIndex && officeLoadedOnce)
@@ -125,7 +125,7 @@ public class SceneLoader : MonoBehaviour
         FindObjectOfType<OfficeManager>().ChangeAnObject();
 
         yield return new WaitForSeconds(1);
-        EnablePlayer();
+        //EnablePlayer();
 
         animTransition.Play("crossfade_end");
         yield return new WaitForSeconds(1.5f);
