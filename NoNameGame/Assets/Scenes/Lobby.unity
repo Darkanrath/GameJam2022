@@ -3665,12 +3665,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1026443468}
-  - component: {fileID: 1026443467}
   - component: {fileID: 1026443466}
   - component: {fileID: 1026443465}
   - component: {fileID: 1026443464}
   m_Layer: 0
-  m_Name: Parameter
+  m_Name: Room
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3739,18 +3738,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &1026443467
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1026443463}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8233d90336aea43098adf6dbabd606a2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &1026443468
 Transform:
   m_ObjectHideFlags: 0
