@@ -88,11 +88,26 @@ public class TMPro_DialogueManager : MonoBehaviour
         PrintDialogue();
     }
 
-    public void AdvanceDialogue()
+    public bool AdvanceDialogue()
     {
         if (!isChoosing && isDialogue)
         {
-            PrintDialogue();
+            if (inputStream.Peek().Contains("[LOADSCENE=") || inputStream.Peek().Contains("EndQueue"))
+            {
+                PrintDialogue();
+                return true;
+            }
+            else
+            {
+                Debug.Log("Printing as per normal");
+                PrintDialogue();
+                return false;
+            }
+        }
+        else
+        {
+            Debug.Log("Not doing anything");
+            return true;
         }
     }
 
@@ -281,10 +296,6 @@ public class TMPro_DialogueManager : MonoBehaviour
         if (isDialogue)
         {
             Debug.Log("Ending Dialogue");
-            if (FindObjectOfType<IntroductionDialogue>())
-            {
-                Destroy(FindObjectOfType<IntroductionDialogue>().gameObject);
-            }
             BodyText.text = "";
             NameText.text = "";
             inputStream.Clear();
