@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class IntroductionDialogue : MonoBehaviour
 {
-    public TextAsset dialogueTextFile;
+    public List<TextAsset> dialogueTextFile = new List<TextAsset>();
 
     private Queue<string> dialogue = new Queue<string>();
+
+    private int fileToRun = 0;
 
     private float waitTime = 0.5f;
     private float nextTime = 0f;
@@ -19,6 +21,11 @@ public class IntroductionDialogue : MonoBehaviour
         dialogueTriggered = true;
     }
 
+    public void ReRun()
+    {
+        TriggerDialogue();
+    }
+
     private void TriggerDialogue()
     {
         ReadTextFile();
@@ -27,7 +34,7 @@ public class IntroductionDialogue : MonoBehaviour
 
     private void ReadTextFile()
     {
-        string txt = dialogueTextFile.text;
+        string txt = dialogueTextFile[fileToRun].text;
 
         string[] lines = txt.Split(System.Environment.NewLine.ToCharArray());
 
@@ -49,6 +56,11 @@ public class IntroductionDialogue : MonoBehaviour
             }
         }
         dialogue.Enqueue("EndQueue");
+
+        if (fileToRun < (dialogueTextFile.Count - 1))
+        {
+            fileToRun += 1;
+        }
     }
 
     private void OnTriggerStay(Collider other)

@@ -17,6 +17,8 @@ public class SceneLoader : MonoBehaviour
     private int officeIndex = 1;
     private bool officeLoadedOnce = false;
 
+    private bool isLoading = false;
+
     private void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
@@ -45,29 +47,32 @@ public class SceneLoader : MonoBehaviour
 
     public void ChangeScene(int index)
     {
-        if (GameObject.FindGameObjectWithTag("Player"))
+        if (isLoading == false)
         {
-            DisablePlayer();
-        }
-        
-        if (index == officeIndex && officeLoadedOnce)
-        {
-            Debug.Log("Going back to Office");
-            StartCoroutine(GoBackToOffice(index));
-        }
-        else
-        {
-            if (index == officeIndex && !officeLoadedOnce)
+            if (GameObject.FindGameObjectWithTag("Player"))
             {
-                Debug.Log("Entering Office for first time");
-                StartCoroutine(LoadSceneAsync(index));
+                DisablePlayer();
+            }
+
+            if (index == officeIndex && officeLoadedOnce)
+            {
+                Debug.Log("Going back to Office");
+                StartCoroutine(GoBackToOffice(index));
             }
             else
             {
-                Debug.Log("Heading to next scene");
-                currentSceneIndex = index;
-                FindObjectOfType<OfficeManager>().HideOffice();
-                StartCoroutine(LoadSceneAsync(index));
+                if (index == officeIndex && !officeLoadedOnce)
+                {
+                    Debug.Log("Entering Office for first time");
+                    StartCoroutine(LoadSceneAsync(index));
+                }
+                else
+                {
+                    Debug.Log("Heading to next scene");
+                    currentSceneIndex = index;
+                    FindObjectOfType<OfficeManager>().HideOffice();
+                    StartCoroutine(LoadSceneAsync(index));
+                }
             }
         }
     }
@@ -108,5 +113,6 @@ public class SceneLoader : MonoBehaviour
 
         yield return new WaitForSeconds(1);
         EnablePlayer();
+        FindObjectOfType<IntroductionDialogue>().ReRun();
     }
 }

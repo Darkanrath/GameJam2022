@@ -23,6 +23,8 @@ public class TMPro_DialogueManager : MonoBehaviour
     private string choiceMade;
     private string choiceNumber;
 
+    private int resultLineAmt = 0;
+
     private bool isChoosing = false;
     private bool isDialogue = false;
 
@@ -127,14 +129,22 @@ public class TMPro_DialogueManager : MonoBehaviour
             if (inputStream.Peek().Contains("[" + choiceMade))
             {
                 inputStream.Dequeue();
+                resultLineAmt = int.Parse(inputStream.Dequeue().Substring(1, 1));
                 BodyText.text = inputStream.Dequeue();
+                resultLineAmt -= 1;
             }
             else
             {
                 inputStream.Dequeue();
+                resultLineAmt = int.Parse(inputStream.Dequeue().Substring(1, 1));
                 inputStream.Dequeue();
+                resultLineAmt -= 1;
                 PrintDialogue();
             }
+        }
+        else if (resultLineAmt > 0)
+        {
+            inputStream.Dequeue();
         }
         else
         {
