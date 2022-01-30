@@ -1,0 +1,14 @@
+[NAME=CEO]Today was a good day...
+
+For some. 
+
+**Choices**
+
+[CHOICE=1]
+Leave
+
+[1]'Night.
+
+[LOADSCENE=5]
+
+EndQueue

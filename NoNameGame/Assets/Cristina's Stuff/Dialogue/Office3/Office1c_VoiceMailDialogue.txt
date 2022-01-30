@@ -1,0 +1,19 @@
+[NAME=VoiceMail]"You have one (1) new message"
+
+[NAME=Assistant]"Hello Mr. CEO. HR left a message for you earlier.
+
+They were inquiring about the applicant uhm... -paper rustles sound- Noel.
+
+I was wondering if you could get back to them by the end of the day regarding a decision?
+
+Feel free to contact them directly, or let me know so I can email the decision for you.
+
+Thanks!"
+
+[NAME=CEO]Oof, I almost forgot about it. Good thing she left a voicemail.
+
+What would I do without her?
+
+... But why they didn't just send an email?
+
+EndQueue 
