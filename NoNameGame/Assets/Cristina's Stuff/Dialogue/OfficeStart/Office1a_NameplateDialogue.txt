@@ -1,4 +1,4 @@
-[NAME=Nameplate]Reads "CEO".
+[NAME=Nameplate]-Reads "Mr. CEO"-
 
 [NAME=CEO]I have not been CEO for long, but I am glad my dad had some connections that landed me this position. 
 
