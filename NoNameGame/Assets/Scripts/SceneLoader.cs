@@ -45,7 +45,10 @@ public class SceneLoader : MonoBehaviour
 
     public void ChangeScene(int index)
     {
-        DisablePlayer();
+        if (GameObject.FindGameObjectWithTag("Player"))
+        {
+            DisablePlayer();
+        }
         
         if (index == officeIndex && officeLoadedOnce)
         {
@@ -80,13 +83,13 @@ public class SceneLoader : MonoBehaviour
         //Debug.Log(player.transform.position);
         if (!officeLoadedOnce)
         {
+            Debug.Log("Why");
             SceneManager.UnloadSceneAsync(SceneManager.GetSceneByBuildIndex(currentSceneIndex));
             //Debug.Log("Loaded Office Scene");
             if (index == officeIndex)
             {
                 player = GameObject.FindGameObjectWithTag("Player");
                 officeLoadedOnce = true;
-                EnablePlayer();
             }
         }
         //Debug.Log(player.transform.position);
