@@ -145,7 +145,7 @@ public class TMPro_DialogueManager : MonoBehaviour
                 inputStream.Dequeue();
                 resultLineAmt = int.Parse(inputStream.Dequeue().Substring(1, 1));
                 BodyText.text = inputStream.Dequeue();
-                resultLineAmt -= 1;
+                resultLineAmt = 0;
             }
             else
             {
@@ -159,6 +159,7 @@ public class TMPro_DialogueManager : MonoBehaviour
         else if (resultLineAmt > 0)
         {
             inputStream.Dequeue();
+            PrintDialogue();
         }
         else
         {
@@ -296,6 +297,7 @@ public class TMPro_DialogueManager : MonoBehaviour
         if (isDialogue)
         {
             Debug.Log("Ending Dialogue");
+            inputStream.Clear();
             BodyText.text = "";
             NameText.text = "";
             inputStream.Clear();
