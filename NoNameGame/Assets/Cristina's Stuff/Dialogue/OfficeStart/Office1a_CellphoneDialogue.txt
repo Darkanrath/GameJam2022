@@ -23,9 +23,8 @@ Leave a tip.
 [1] You know, I don't really care. Leaving a tip won't make a difference.
 
 [2] -sigh- I did read in the newspaper that delivery drivers are struggling...
-
 Maybe I should leave at least something. I hope this is enough.
 
-[LOADSCENE=1]
+[LOADSCENE=2]
 
 EndQueue
