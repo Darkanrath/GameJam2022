@@ -26,6 +26,6 @@ Leave a tip.
 
 Maybe I should leave at least something. I hope this is enough.
 
-[SCENELOAD=1]
+[LOADSCENE=2]
 
 EndQueue
