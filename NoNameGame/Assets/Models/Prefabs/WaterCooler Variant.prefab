@@ -63,13 +63,49 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8513424388201257645, guid: 63b87aff4e514534d9a49c6e97676292, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: -7609145667655734672, guid: 63b87aff4e514534d9a49c6e97676292, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: -6067185528594298527, guid: 63b87aff4e514534d9a49c6e97676292, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 41632f15882a9e349b2f44dc9e2a526a, type: 2}
+    - target: {fileID: -3957782524123411102, guid: 63b87aff4e514534d9a49c6e97676292, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 63b87aff4e514534d9a49c6e97676292, type: 3}
       propertyPath: m_Name
-      value: WaterCooler
+      value: WaterCooler Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 63b87aff4e514534d9a49c6e97676292, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 63b87aff4e514534d9a49c6e97676292, type: 3}
+--- !u!1 &7784601920956296796 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -8513424388201257645, guid: 63b87aff4e514534d9a49c6e97676292, type: 3}
+  m_PrefabInstance: {fileID: 7337009945708169999}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &7303189306364267754
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7784601920956296796}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da17be75cfe17c743a03087fec53edcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coloredTexture: {fileID: 2800000, guid: f0fe2c2a1f6c1704487045be23f6ed34, type: 3}
+  darkTexture: {fileID: 2800000, guid: 5300134e87b3e314abf7f9114b194782, type: 3}
+  normalMap: {fileID: 2800000, guid: c222b1165d744bf49966c4753f1842ad, type: 3}

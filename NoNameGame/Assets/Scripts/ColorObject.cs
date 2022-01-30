@@ -6,6 +6,9 @@ public class ColorObject : MonoBehaviour
     public Texture darkTexture;
     public Texture normalMap;
 
+    [Space(20)]
+    public Color natColor;
+
     private Renderer objectMatRenderer;
 
     // Start is called before the first frame update

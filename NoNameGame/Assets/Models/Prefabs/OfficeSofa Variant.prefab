@@ -71,6 +71,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: OfficeSofa Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 331113aa3e5284741a502f9c03476f9f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 331113aa3e5284741a502f9c03476f9f, type: 3}
 --- !u!1 &5070487961174263345 stripped
@@ -91,3 +95,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.009802832, y: 0.039739277, z: 0.016430877}
   m_Center: {x: -0.00009858328, y: 0.006835388, z: -0.002307766}
+--- !u!114 &6140659533432482902
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5070487961174263345}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da17be75cfe17c743a03087fec53edcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coloredTexture: {fileID: 2800000, guid: 32bc306b2a11ddb409eec11933489faa, type: 3}
+  darkTexture: {fileID: 2800000, guid: 1da8ae27d4007c74b815b9dbd825769a, type: 3}
+  normalMap: {fileID: 0}

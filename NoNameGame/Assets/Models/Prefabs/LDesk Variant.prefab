@@ -69,7 +69,32 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 953532cf93c6ecd4db8434ef73494b15, type: 2}
     - target: {fileID: 919132149155446097, guid: 122b0aa917dc30b4f84a19e079ee7625, type: 3}
       propertyPath: m_Name
-      value: LDesk
+      value: LDesk Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 122b0aa917dc30b4f84a19e079ee7625, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 122b0aa917dc30b4f84a19e079ee7625, type: 3}
+--- !u!1 &3539424906938484427 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 122b0aa917dc30b4f84a19e079ee7625, type: 3}
+  m_PrefabInstance: {fileID: 4458556908855376794}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &-4259660775166778049
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3539424906938484427}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da17be75cfe17c743a03087fec53edcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coloredTexture: {fileID: 2800000, guid: ffae74d7ab53cad4e97bd691c87146d3, type: 3}
+  darkTexture: {fileID: 2800000, guid: 1ef544c47672f1c44bacb3d4361d981d, type: 3}
+  normalMap: {fileID: 2800000, guid: be831ea9e2ecdd8448cdeb40b9a25af8, type: 3}
+  natColor: {r: 0, g: 0, b: 0, a: 0}

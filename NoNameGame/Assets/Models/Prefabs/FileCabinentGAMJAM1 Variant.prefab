@@ -63,9 +63,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8391222552659086748, guid: 8156aac7d673e734a8e389b0df55d513, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: -516098083770646512, guid: 8156aac7d673e734a8e389b0df55d513, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 8156aac7d673e734a8e389b0df55d513, type: 3}
       propertyPath: m_Name
-      value: FileCabinentGAMJAM1
+      value: FileCabinentGAMJAM1 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8156aac7d673e734a8e389b0df55d513, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8156aac7d673e734a8e389b0df55d513, type: 3}
