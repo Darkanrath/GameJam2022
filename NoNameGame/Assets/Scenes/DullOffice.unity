@@ -800,6 +800,36 @@ Transform:
   m_Father: {fileID: 687849480}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &392117789
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 392117790}
+  m_Layer: 0
+  m_Name: OfficeSet3
+  m_TagString: OfficeSet
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &392117790
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 392117789}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.8852003, y: 1.3647773, z: -0.583989}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &420003460
 GameObject:
   m_ObjectHideFlags: 0
@@ -809,7 +839,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 420003465}
-  - component: {fileID: 420003464}
   - component: {fileID: 420003463}
   - component: {fileID: 420003462}
   - component: {fileID: 420003461}
@@ -883,18 +912,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &420003464
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 420003460}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8233d90336aea43098adf6dbabd606a2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &420003465
 Transform:
   m_ObjectHideFlags: 0
@@ -909,6 +926,50 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &469357252
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 469357253}
+  - component: {fileID: 469357254}
+  m_Layer: 0
+  m_Name: OfficeManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &469357253
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 469357252}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.8852003, y: 1.3647773, z: -0.583989}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &469357254
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 469357252}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84c59ebc537a1f94ba017b7083d2d005, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  officeHolder: {fileID: 0}
 --- !u!4 &489067608 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1475974625378709974, guid: 143c3defdb2f4db4b9d4d6fe08688757, type: 3}
@@ -1523,6 +1584,36 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a9333933cb715444ea333e898372fb32, type: 3}
+--- !u!1 &836858743
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 836858744}
+  m_Layer: 0
+  m_Name: OfficeSet2
+  m_TagString: OfficeSet
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &836858744
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 836858743}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.8852003, y: 1.3647773, z: -0.583989}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &905818751 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5554676957152517259, guid: a9333933cb715444ea333e898372fb32, type: 3}
@@ -2344,7 +2435,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b473e8da7d3a0e47a531d4a46ba55b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueTextFile: {fileID: 4900000, guid: 1e4d5d8dadc10b449a04c88cddff9454, type: 3}
+  dialogueTextFile:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  interactionText: 
 --- !u!114 &1511384426
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2358,6 +2453,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textFile: {fileID: 0}
+  interactionText: 
   objectRequirement: 0
   colorAnObject: 1
 --- !u!65 &1511384427
@@ -2663,6 +2759,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textFile: {fileID: 0}
+  interactionText: 
   objectRequirement: 0
   colorAnObject: 0
 --- !u!114 &1644918859
@@ -2677,7 +2774,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b473e8da7d3a0e47a531d4a46ba55b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueTextFile: {fileID: 4900000, guid: f358c7fedc105f34786623b0850e26ee, type: 3}
+  dialogueTextFile:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  interactionText: 
 --- !u!4 &1644918860
 Transform:
   m_ObjectHideFlags: 0
@@ -2864,6 +2965,36 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f6b5b6c1db58c9943b3c12d59aac476e, type: 3}
+--- !u!1 &1715326591
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1715326592}
+  m_Layer: 0
+  m_Name: OfficeSet1
+  m_TagString: OfficeSet
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1715326592
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1715326591}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.8852003, y: 1.3647773, z: -0.583989}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1728767817
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3204,7 +3335,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b473e8da7d3a0e47a531d4a46ba55b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueTextFile: {fileID: 4900000, guid: b0ed37e1eb5646a41b5cd1708493d2d2, type: 3}
+  dialogueTextFile:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  interactionText: 
 --- !u!65 &1781688779
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3247,8 +3382,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textFile: {fileID: 0}
+  interactionText: 
   objectRequirement: 1
-  colorAnObject: 0
+  colorAnObject: 1
 --- !u!1001 &1813651566
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3315,6 +3451,10 @@ PrefabInstance:
     - target: {fileID: 4304411498332840859, guid: 3046a2041372b624faeee1a03971ba70, type: 3}
       propertyPath: m_Name
       value: CoffeeTable Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 4304411498332840859, guid: 3046a2041372b624faeee1a03971ba70, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3046a2041372b624faeee1a03971ba70, type: 3}
@@ -3853,6 +3993,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textFile: {fileID: 0}
+  interactionText: 
   objectRequirement: 0
   colorAnObject: 0
 --- !u!114 &2067666092
@@ -3867,7 +4008,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b473e8da7d3a0e47a531d4a46ba55b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueTextFile: {fileID: 4900000, guid: 79822c77333967444909a079b7122aff, type: 3}
+  dialogueTextFile:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  interactionText: 
 --- !u!4 &2067666093
 Transform:
   m_ObjectHideFlags: 0

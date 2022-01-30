@@ -16,7 +16,10 @@ public class TMPro_DialogueTrigger : MonoBehaviour
     [Space(10)]
     public bool colorAnObject = false;
 
-    private int interactAmt = 0;
+    [HideInInspector]
+    public int interactAmt = 0;
+    [HideInInspector]
+    public bool moreDialogue = true;
 
     private GameObject interactTextBox;
     private TMP_Text interactText;
@@ -45,7 +48,7 @@ public class TMPro_DialogueTrigger : MonoBehaviour
             ChangeStatus();
             if (colorAnObject)
             {
-                FindObjectOfType<TMPro_DialogueManager>().ChangeAnObject();
+                FindObjectOfType<OfficeManager>().ChangeAnObject();
             }
             isInteractedWith = true;
         }
@@ -76,7 +79,7 @@ public class TMPro_DialogueTrigger : MonoBehaviour
         }
         dialogue.Enqueue("EndQueue");
 
-        if (interactAmt != dialogueTextFile.Length - 1)
+        if (interactAmt != dialogueTextFile.Length - 1 && moreDialogue == true)
         {
             interactAmt += 1;
         }
