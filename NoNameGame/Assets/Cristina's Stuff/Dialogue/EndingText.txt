@@ -9,6 +9,6 @@ Leave
 
 [1]'Night.
 
-[LOADSCENE=5]
+[LOADSCENE=4]
 
 EndQueue
