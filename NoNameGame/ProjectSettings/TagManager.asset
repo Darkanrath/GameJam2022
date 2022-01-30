@@ -6,6 +6,7 @@ TagManager:
   tags:
   - ColorChange
   - OfficeSet
+  - ChangeByResult
   layers:
   - Default
   - TransparentFX

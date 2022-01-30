@@ -16,7 +16,7 @@ public class ResultsCarrier : MonoBehaviour
         if (GameObject.FindGameObjectWithTag("ChangeByResult"))
         {
             GameObject toChange = GameObject.FindGameObjectWithTag("ChangeByResult");
-            toChange.GetComponent<TMPro_DialogueTrigger>().interactAmt = choiceMade;
+            toChange.GetComponent<TMPro_DialogueTrigger>().interactAmt = choiceMade - 1;
             toChange.GetComponent<TMPro_DialogueTrigger>().moreDialogue = false;
         }
     }
