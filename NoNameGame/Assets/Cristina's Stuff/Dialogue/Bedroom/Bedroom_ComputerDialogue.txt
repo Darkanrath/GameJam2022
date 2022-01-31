@@ -12,6 +12,6 @@ Or at least it relaxes me...
 
 -sigh- Bummer, nothing yet...
 
-[LOADSCENE=6]
+[LOADSCENE=1]
 
 EndQueue

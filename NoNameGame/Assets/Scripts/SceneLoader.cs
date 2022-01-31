@@ -72,8 +72,11 @@ public class SceneLoader : MonoBehaviour
                 else
                 {
                     Debug.Log("Heading to next scene");
-                    currentSceneIndex = index;
-                    FindObjectOfType<OfficeManager>().HideOffice();
+                    if (officeLoadedOnce)
+                    {
+                        currentSceneIndex = index;
+                        FindObjectOfType<OfficeManager>().HideOffice();
+                    }
                     StartCoroutine(LoadSceneAsync(index));
                 }
             }
@@ -90,7 +93,10 @@ public class SceneLoader : MonoBehaviour
         {
             yield return null;
         }
-        FindObjectOfType<ResultsCarrier>().ChangeSceneSpecifics();
+        if (officeLoadedOnce)
+        {
+            FindObjectOfType<ResultsCarrier>().ChangeSceneSpecifics();
+        }
         //Debug.Log(player.transform.position);
         if (!officeLoadedOnce)
         {

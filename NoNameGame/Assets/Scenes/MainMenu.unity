@@ -464,9 +464,17 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: MainMenuManager, Assembly-CSharp
       objectReference: {fileID: 0}
+    - target: {fileID: 3562518014242832411, guid: 4f4aa0615ec52d341bd52edbc448df3b, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -1.2200317
+      objectReference: {fileID: 0}
     - target: {fileID: 9203193269291665619, guid: 4f4aa0615ec52d341bd52edbc448df3b, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -1.0015259
+      value: -1.0015869
+      objectReference: {fileID: 0}
+    - target: {fileID: 9203193269291665619, guid: 4f4aa0615ec52d341bd52edbc448df3b, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.2800293
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f4aa0615ec52d341bd52edbc448df3b, type: 3}
@@ -525,6 +533,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Transition
       objectReference: {fileID: 0}
+    - target: {fileID: 6370451689312878420, guid: 69ee0e54455ec7b41aa4c8ac5c081f3d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7371482292753251113, guid: 69ee0e54455ec7b41aa4c8ac5c081f3d, type: 3}
       propertyPath: m_SortingOrder
       value: 1
@@ -541,7 +553,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1413621475}
   - component: {fileID: 1413621474}
-  - component: {fileID: 1413621476}
   m_Layer: 0
   m_Name: Music
   m_TagString: Untagged
@@ -559,11 +570,11 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 24300002, guid: 40c0d5d0daa4308409d622bf30ec3bf7, type: 2}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 5a3d01e34c16e4a45b7b266cf9980cbb, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -659,14 +670,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!81 &1413621476
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1413621473}
-  m_Enabled: 1
 --- !u!1 &1457685933
 GameObject:
   m_ObjectHideFlags: 0
@@ -1273,7 +1276,7 @@ MonoBehaviour:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 30
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 3
     m_MaxSize: 40
     m_Alignment: 4
@@ -1478,7 +1481,7 @@ MonoBehaviour:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 30
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 3
     m_MaxSize: 40
     m_Alignment: 4
@@ -2243,7 +2246,7 @@ MonoBehaviour:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 30
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 3
     m_MaxSize: 40
     m_Alignment: 3
@@ -2378,7 +2381,7 @@ MonoBehaviour:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 30
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 3
     m_MaxSize: 40
     m_Alignment: 4
@@ -2914,7 +2917,7 @@ MonoBehaviour:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 70
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 7
     m_MaxSize: 70
     m_Alignment: 4
@@ -3448,7 +3451,7 @@ MonoBehaviour:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 30
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 3
     m_MaxSize: 40
     m_Alignment: 4
