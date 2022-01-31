@@ -1,8 +1,7 @@
 [NAME=NOEL]I don't know why I have this T.V. if I barely use it.
 
 
-[NAME=NEWS ANCHOR]
--News anchor speaks-
+[NAME=NEWS ANCHOR]-News anchor speaks-
 
 “In a recent economic trend, employees are resigning en masse in what economists are calling “the Great Resignation”. 
 

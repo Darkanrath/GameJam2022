@@ -2,32 +2,32 @@
 
 ... Hello! Thank you for letting me in earlier to deliver the food.
 
-[NAME=Receptionist 1] Yeah! No problem hun. 
+[NAME=Receptionist 1]Yeah! No problem hun. 
 
-[NAME=Delivery Driver] Uhm. I was wondering if by any chance you knew if the company is hiring? 
+[NAME=Delivery Driver]Uhm. I was wondering if by any chance you knew if the company is hiring? 
 
 Maybe an entry-level job, Security, Cleaning...?
 
-[NAME=Receptionist 1] Sorry hun, we don't have any openings as far as I know.
+[NAME=Receptionist 1]Sorry hun, we don't have any openings as far as I know.
 
 You should check the website every now and then.
 
-[NAME=Receptionist 2] Don't bother. They won't hire anytime soon.
+[NAME=Receptionist 2]Don't bother. They won't hire anytime soon.
 
-[NAME=Delivery Driver] Oh... Ok, I totally understand.
+[NAME=Delivery Driver]Oh... Ok, I totally understand.
 
 But uhm... Would you be willing to take my resume? 
 
 Maybe you can add it to your system for whenever a spot opens?
 
-[NAME=Receptionist 2] N-
+[NAME=Receptionist 2]N-
 
-[NAME=Receptionist 1] Sure hun! We'll take it and I'll see what I can do.
+[NAME=Receptionist 1]Sure hun! We'll take it and I'll see what I can do.
 
-[NAME=Delivery Driver] Awesome! Thank you so much! Have a nice day!
+[NAME=Delivery Driver]Awesome! Thank you so much! Have a nice day!
 
-[NAME=Receptionist 1] You too!
+[NAME=Receptionist 1]You too!
 
-[NAME=Receptionist 2] -rolls eyes-
+[NAME=Receptionist 2]-rolls eyes-
 
 EndQueue

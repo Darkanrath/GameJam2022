@@ -20,7 +20,4 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/EndGame.unity
     guid: 823dabf41dac3024eab7c3a6c18eb7df
-  - enabled: 1
-    path: Assets/Scenes/Conference Room.unity
-    guid: e0489ca961c91da438526cde8ff91a4f
   m_configObjects: {}

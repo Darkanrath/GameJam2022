@@ -13,11 +13,11 @@ I am sure you will lookout for the company.
 Best Regards,
 President of THECompany. 
 
-[NAME=CEO]
+[NAME=CEO]Ok... Let's see what I can do.
 
 **Choices**
-[CHOICE=1]
-Mass Layoffs.
+
+[CHOICE=1]Mass Layoffs.
 [CHOICE=2][*3]
 Hire friend.
 [CHOICE=3][*4]
@@ -28,7 +28,7 @@ Hire Qualified Candidate.
 [1][5]
 President of THECompany, 
 I think we should downsize. What matters most is our profit margins and the investors. 
-I’m sure that some of our soon to be ex-employees will have no problems finding other jobs. 
+I am sure that some of our soon to be ex-employees will have no problems finding other jobs. 
 We would also save money spending less on payroll.
 - Signed, Mr. CEO
 
@@ -36,7 +36,7 @@ We would also save money spending less on payroll.
 [2][5]
 President of THECompany,
 I have a friend of mine that is perfect for a manager position. 
-He’ll get the workers in-line and increase productivity. 
+He will get the workers in-line and increase productivity. 
 With this increase of productivity, profits should go back up in no time. 
 - Signed, Mr. CEO  
 

@@ -4,10 +4,10 @@ For some.
 
 **Choices**
 
-[CHOICE=1]
-Leave
+[CHOICE=1]Leave
 
-[1]'Night.
+[1][1]
+'Night.
 
 [LOADSCENE=4]
 

@@ -1,4 +1,4 @@
-[NAME=CEO] Welp, I guess I better start actually doing my job...
+[NAME=CEO]Welp, I guess I better start actually doing my job...
 
 Let's see these resumes. We need an Associate Software Analyst...
 
@@ -15,7 +15,7 @@ Volunteer: Teach old folks to use technology more efficiently.
 
 His cover letter seems ordinary, kinda like a generic copy/paste format.
 
-I can just hire it and call it a day.
+I can just hire them and call it a day.
 
 **Choices**
 
@@ -33,7 +33,7 @@ Everything looks good but are they the right fit for the company?
 I should probably Give it some thought...
 Don't want to be making sporadic decisions so soon. 
 
-Shit, it is late. I almost miss my meeting!
+Shit, it is late. I don't want to miss my meeting!
 
 [LOADSCENE=3][*2]
 
