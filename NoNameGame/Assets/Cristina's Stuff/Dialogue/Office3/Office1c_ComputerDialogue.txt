@@ -16,8 +16,7 @@ President of THECompany.
 [NAME=CEO]
 
 **Choices**
-[CHOICE=1]
-Mass Layoffs.
+[CHOICE=1]Mass Layoffs.
 [CHOICE=2][*3]
 Hire friend.
 [CHOICE=3][*4]
